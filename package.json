@@ -1,0 +1,37 @@
+{ "name": "jekyll-theme",
+  "version": "1.0.0",
+  "description": "jekyll-theme",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdkn/jekyll-theme.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "tdkn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tdkn/jekyll-theme/issues"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-stylus": "^2.5.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "gsap": "^1.19.0",
+    "node-bourbon": "^4.2.8",
+    "three": "^0.80.1",
+    "velocity-animate": "^1.2.3"
+  }
+}
