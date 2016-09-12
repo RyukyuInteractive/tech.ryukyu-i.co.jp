@@ -34,7 +34,7 @@
 - Permalink: `http://tech.ryukyu-i.co.jp/:year/:month/:day/:title/`
 
 ## Features
-- Emoji is available 😄:
+- Emoji is available 😄
   - [http://emoji-cheat-sheet.com/](http://emoji-cheat-sheet.com/)
 - Syntax hilight.
   - [Rouge](http://rouge.jneen.net/)
