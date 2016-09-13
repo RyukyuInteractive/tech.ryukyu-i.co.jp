@@ -521,6 +521,23 @@ hr {
   display: inline-block;
 }
 
+.share a {
+  border-bottom: none;
+  box-sizing: content-box;
+  display: inline-block;
+  width: 28px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.share a.ion-social-twitter {
+  color: #1da1f2;
+}
+
+.share a.ion-social-facebook {
+  color: #3b5998;
+}
+
 .disqus {
   background-color: rgba(41, 41, 41, 0.05);
   padding: 1.5em 0;
