@@ -178,6 +178,12 @@ hr {
 
 .post {
   @extend .clearfix;
+
+  &-content {
+    strong {
+      font-weight: bold;
+    }
+  }
 }
 
 .pagination {
