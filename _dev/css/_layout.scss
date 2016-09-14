@@ -205,6 +205,22 @@ hr {
   h4 {
     display: inline-block;
   }
+
+  a {
+    border-bottom: none;
+    box-sizing: content-box;
+    display: inline-block;
+    width: 28px;
+    font-size: 25px;
+    text-align: center;
+
+    &.ion-social-twitter {
+      color: #1da1f2;
+    }
+    &.ion-social-facebook {
+      color: #3b5998;
+    }
+  }
 }
 
 .disqus {
