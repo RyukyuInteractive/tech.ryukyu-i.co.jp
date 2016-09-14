@@ -1,7 +1,9 @@
 ul,
 ol {
-  list-style-position: inside;
+  list-style-position: outside;
   margin: 0;
+  margin-left: 1em;
+  margin-bottom: .75em;
   padding: 0;
   padding-left: 10px;
 
@@ -36,5 +38,12 @@ dl {
 
   dd {
     margin: 0;
+  }
+}
+
+blockquote {
+  & > ol,
+  & > ul {
+    padding-left: 0px;
   }
 }
