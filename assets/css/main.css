@@ -272,6 +272,7 @@ h1 {
 }
 
 h2 {
+  margin-top: 1.5em;
   font-size: 1.625rem;
 }
 
@@ -515,9 +516,26 @@ hr {
   font-style: italic;
 }
 
-.post-meta {
+.post-meta-avatar {
+  display: table-cell;
+}
+
+.post-meta-avatar a {
+  border-bottom: none;
+}
+
+.post-meta-avatar a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border-width: 4px;
+  border-color: #DDD;
+  border-style: solid;
+}
+
+.post-meta-links .description {
   color: #999;
-  font-style: italic;
+  font-style: normal;
 }
 
 .post-content strong {
