@@ -8,11 +8,23 @@ title: Home
 <section class="post-list">
   <div class="container">
 
-    <h2>Latest Posts</h2>
+    <h2>What's New?</h2>
 
     {% for post in paginator.posts %}
       <article class="post-item">
-        <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong> — <span> {{ post.content | strip_html | truncate: 200 }}</span> <a class="post-link readmore" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
+        <div class="post-item-meta">
+          <div class="post-item-meta-avatar">
+            <a href="//github.com/{{ post.author }}">
+              <img src="//github.com/{{ post.author }}.png" alt="Github Avatar">
+            </a>
+          </div>
+          <div class="post-item-meta-detail">
+            <a href="//github.com/{{ post.author }}">@{{ post.author }}</a>
+            <p><span class="post-meta">{{ post.date | date: "%Y.%m.%d (%a)" }}</span></p>
+          </div>
+        </div>
+        <p><strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong></p>
+        <p><span> {{ post.content | strip_html | truncate: 200 }}</span> <a class="post-link readmore" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
       </article>
     {% endfor %}
   </div>

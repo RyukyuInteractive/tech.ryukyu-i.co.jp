@@ -141,6 +141,11 @@ hr {
   }
 }
 
+.post-title {
+  font-weight: bold;
+  text-align: center;
+}
+
 .post-list {
   background-color: #fafafa;
   padding: $base-spacing 0;
@@ -150,6 +155,11 @@ hr {
   padding-bottom: $small-spacing;
   margin-bottom: $base-spacing;
   border-bottom: 1px solid lighten($light-gray-color, 5%);
+
+  border: 1px solid rgba(0,0,0,.09);
+  box-shadow: 0 2px 4px rgba(0,0,0,.04);
+  background-color: #fff;
+  padding: 10px 20px;
 
   strong {
     font-weight: 700;
@@ -161,11 +171,45 @@ hr {
   }
 
   .readmore {
-    font-style: italic;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    font-style: normal;
+    font-size: 0.8em;
+    color: gray;
+    padding: 0 0.5em;
+    transition: 0.3s ease;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #464646;
+      color: white;
+    }
+  }
+
+  &-meta {
+    font-size: 14px;
+    &-avatar {
+      display: table-cell;
+      a {
+        border-bottom: none;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+        }
+      }
+    }
+
+    &-detail {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 10px;
+    }
   }
 }
 
 .post-meta {
+  text-align: center;
   &-avatar {
     a {
       border-bottom: none;
@@ -173,12 +217,8 @@ hr {
         width: 60px;
         height: 60px;
         border-radius: 100%;
-        border-width: 4px;
-        border-color: #DDD;
-        border-style: solid;
       }
     }
-    display: table-cell;
   }
   &-links {
     .description {

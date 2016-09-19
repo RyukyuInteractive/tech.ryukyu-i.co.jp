@@ -55,7 +55,7 @@ table {
 
 .button {
   appearance: none;
-  background-color: #365fc3;
+  background-color: #464646;
   border: 0;
   border-radius: 0.52em;
   color: #fff;
@@ -75,7 +75,7 @@ table {
 }
 
 .button:hover, .button:focus {
-  background-color: #2b4c9c;
+  background-color: #383838;
   color: #fff;
 }
 
@@ -85,7 +85,7 @@ table {
 }
 
 .button:disabled:hover {
-  background-color: #365fc3;
+  background-color: #464646;
 }
 
 fieldset {
@@ -138,8 +138,8 @@ select[multiple=multiple]:hover {
 
 input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
 select[multiple=multiple]:focus {
-  border-color: #365fc3;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(48, 85, 175, 0.7);
+  border-color: #464646;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(57, 57, 57, 0.7);
   outline: none;
 }
 
@@ -299,13 +299,13 @@ p.lead {
 }
 
 a {
-  color: #365fc3;
+  color: #464646;
   text-decoration: none;
   transition: color 150ms ease;
 }
 
 a:active, a:focus, a:hover {
-  color: #294792;
+  color: #353535;
 }
 
 hr {
@@ -442,7 +442,7 @@ hr {
 }
 
 .intro .author-name {
-  background-color: #365fc3;
+  background-color: #464646;
   color: #fff;
   display: inline-block;
   padding: 0 .3em;
@@ -493,6 +493,11 @@ hr {
   padding: 0 .6em;
 }
 
+.post-title {
+  font-weight: bold;
+  text-align: center;
+}
+
 .post-list {
   background-color: #fafafa;
   padding: 1.5em 0;
@@ -502,6 +507,10 @@ hr {
   padding-bottom: 0.75em;
   margin-bottom: 1.5em;
   border-bottom: 1px solid rgba(13, 13, 13, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  padding: 10px 20px;
 }
 
 .post-item strong {
@@ -514,11 +523,47 @@ hr {
 }
 
 .post-item .readmore {
-  font-style: italic;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-style: normal;
+  font-size: 0.8em;
+  color: gray;
+  padding: 0 0.5em;
+  transition: 0.3s ease;
+  background-color: transparent;
 }
 
-.post-meta-avatar {
+.post-item .readmore:hover {
+  background-color: #464646;
+  color: white;
+}
+
+.post-item-meta {
+  font-size: 14px;
+}
+
+.post-item-meta-avatar {
   display: table-cell;
+}
+
+.post-item-meta-avatar a {
+  border-bottom: none;
+}
+
+.post-item-meta-avatar a img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.post-item-meta-detail {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.post-meta {
+  text-align: center;
 }
 
 .post-meta-avatar a {
@@ -529,9 +574,6 @@ hr {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  border-width: 4px;
-  border-color: #DDD;
-  border-style: solid;
 }
 
 .post-meta-links .description {

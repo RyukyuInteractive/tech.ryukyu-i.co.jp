@@ -14,7 +14,7 @@ layout: default
       {% endif %}
       <div class="post-meta-links">
         <p class="description">
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y.%m.%d (%a)" }}</time>
           {% if page.author %} •
           <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
           {% endif %}
