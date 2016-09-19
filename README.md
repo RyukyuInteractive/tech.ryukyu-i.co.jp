@@ -35,7 +35,7 @@
 
 ## Features
 - Emoji is available 😄
-  - [http://emoji-cheat-sheet.com/](http://emoji-cheat-sheet.com/)
+  - [Emoji cheat sheet for GitHub, Basecamp and other services](http://www.webpagefx.com/tools/emoji-cheat-sheet/)
 - Syntax hilight.
   - [Rouge](http://rouge.jneen.net/)
   - [List of supported languages and lexers · jneen/rouge Wiki](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers)
