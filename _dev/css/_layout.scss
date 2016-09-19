@@ -263,10 +263,10 @@ hr {
 
   a {
     @extend .link;
+    max-width: 150px;
   }
 
   small {
-    max-width: 150px;
     display: block;
     font-size: rem(12);
     color: darken($medium-gray-color, 10%);
