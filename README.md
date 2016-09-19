@@ -41,9 +41,9 @@
   - [List of supported languages and lexers · jneen/rouge Wiki](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers)
 
 ## TODO
+- [x] avatar
+- [x] google analytics
+- [x] disqus
 - [ ] super cool design
-- [ ] avatar
 - [ ] tags & categories
-- [ ] google analytics
-- [ ] disqus
 - [ ] https
