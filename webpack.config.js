@@ -24,6 +24,8 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
       THREE: 'three',
       TweenMax: 'gsap',
       Velocity: 'velocity-animate',

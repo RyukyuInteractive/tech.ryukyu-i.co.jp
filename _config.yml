@@ -43,7 +43,7 @@ paginate_path: "/page/:num/"
 
 author:
   name     : "RyukyuInteractive"
-  bio      : "Be the leading internet company by creative technologies."
+  bio      : "Be the leading internet company by creative technologies"
 
 # Exclude these files from your production _site
 exclude:

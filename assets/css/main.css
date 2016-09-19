@@ -934,3 +934,12 @@ hr {
 .highlight .il {
   color: #099;
 }
+
+.logo {
+  opacity: 0;
+}
+
+.intro .lead span {
+  opacity: 0;
+  display: inline-block;
+}
