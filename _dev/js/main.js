@@ -16,9 +16,8 @@ $(() => {
   })
 
   // Intro
-  wrapWords($('.intro .lead'))
   Velocity({
-    e: $('.intro .lead *'),
+    e: $('.intro .lead'),
     p: {
       opacity: [1, 0],
       translateY: ['0px', '-20px'],
@@ -44,10 +43,3 @@ $(() => {
     }
   })
 })
-
-function wrapWords($el, tmpl) {
-  if ($el === null) return
-  let str = $el.text()
-  $el.html(str.replace(/\w+/g, tmpl || '<span>$&</span>'))
-}
-

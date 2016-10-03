@@ -76,6 +76,13 @@ hr {
 }
 
 .intro {
+  position: relative;
+
+  &-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
   .container {
     padding: 5.0em;

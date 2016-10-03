@@ -22,9 +22,8 @@ webpackJsonp([0],[
 	  });
 
 	  // Intro
-	  wrapWords($('.intro .lead'));
 	  Velocity({
-	    e: $('.intro .lead *'),
+	    e: $('.intro .lead'),
 	    p: {
 	      opacity: [1, 0],
 	      translateY: ['0px', '-20px']
@@ -50,12 +49,6 @@ webpackJsonp([0],[
 	    }
 	  });
 	});
-
-	function wrapWords($el, tmpl) {
-	  if ($el === null) return;
-	  var str = $el.text();
-	  $el.html(str.replace(/\w+/g, tmpl || '<span>$&</span>'));
-	}
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(2)))
 
 /***/ },
@@ -64,7 +57,7 @@ webpackJsonp([0],[
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/**********************
+	/* WEBPACK VAR INJECTION */(function(__webpack_provided_window_dot_jQuery) {/**********************
 	   Velocity UI Pack
 	**********************/
 
@@ -824,8 +817,9 @@ webpackJsonp([0],[
 
 	        Velocity(sequence[0]);
 	    };
-	}((window.jQuery || window.Zepto || window), window, document);
+	}((__webpack_provided_window_dot_jQuery || window.Zepto || window), window, document);
 	}));
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }
 ]);

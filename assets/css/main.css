@@ -437,6 +437,16 @@ hr {
   min-height: 80px;
 }
 
+.intro {
+  position: relative;
+}
+
+.intro-canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .intro .container {
   padding: 5.0em;
 }
@@ -939,7 +949,6 @@ hr {
   opacity: 0;
 }
 
-.intro .lead span {
+.intro .lead {
   opacity: 0;
-  display: inline-block;
 }
