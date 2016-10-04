@@ -1,3 +1,5 @@
+@import "../../node_modules/csshake/scss/csshake";
+
 .logo {
   opacity: 0;
 }
@@ -5,3 +7,11 @@
 .intro .lead {
   opacity: 0;
 }
+
+.post-item {
+  @extend .shake-trigger;
+  .readmore {
+    @extend .shake-chunk;
+  }
+}
+
