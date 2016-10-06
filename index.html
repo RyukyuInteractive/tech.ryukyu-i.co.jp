@@ -29,7 +29,9 @@ title: Home
     {% endfor %}
   </div>
 
+  {% if paginator.total_pages > 1 %}
   <div class="container">
     {% include pagination.html %}
   </div>
+  {% endif %}
 </section>
