@@ -163,16 +163,18 @@ hr {
   margin-bottom: $base-spacing + 1.0em;
   border-bottom: 1px solid lighten($light-gray-color, 5%);
 
+  opacity: 0.8;
   box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
   border-radius: 4px;
   background-color: #fff;
   padding: 10px 20px;
-  transition-property: box-shadow,transform;
+  transition-property: opacity,box-shadow,transform;
   transition-duration: .15s;
-  -webkit-transition-property: box-shadow,transform;
+  -webkit-transition-property: opacity,box-shadow,transform;
   -webkit-transition-duration: .15s;
 
   &:hover {
+    opacity: 1.0;
     transform: translateY(-2px);
     box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
   }
