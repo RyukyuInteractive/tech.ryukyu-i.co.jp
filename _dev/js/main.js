@@ -1,5 +1,3 @@
-import 'velocity-animate/velocity.ui'
-
 $(() => {
   // Logo
   Velocity({
