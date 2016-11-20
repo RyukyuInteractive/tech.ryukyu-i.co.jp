@@ -256,6 +256,9 @@ hr {
   @extend .clearfix;
 
   &-content {
+    h2 {
+      font-weight: bold;
+    }
     strong {
       font-weight: bold;
     }
