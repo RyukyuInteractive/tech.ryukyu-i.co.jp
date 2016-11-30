@@ -293,6 +293,9 @@ hr {
 
   .prev, .next {
     @extend .link;
+    &.disabled {
+      opacity: 0.2;
+    }
   }
 }
 
