@@ -32,6 +32,7 @@ markdown: kramdown
 # theme: minima
 
 # social settings
+cover: /assets/images/cover.jpg
 og_locale: "ja_JP"
 twitter_card: "summary_large_image"
 
