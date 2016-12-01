@@ -58,6 +58,7 @@ hr {
   display: inline-block;
   padding-bottom: .08em;
   border-bottom: 2px solid $light-gray-color;
+  font-family: $heading-font-family;
 
   @include transition(border 300ms linear);
 
