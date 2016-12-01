@@ -1,7 +1,7 @@
 // Typography
-$base-font-family: 'Open Sans', $helvetica;
+$base-font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', $helvetica;
 // $base-font-family: 'Merriweather', "Georgia", serif;
-$heading-font-family: $base-font-family;
+$heading-font-family: 'Open Sans', $helvetica, $base-font-family;
 
 // Font Sizes
 $base-font-size: 1em;
