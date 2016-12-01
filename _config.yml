@@ -31,6 +31,9 @@ comments: true
 markdown: kramdown
 # theme: minima
 
+# social settings
+twitter_card: "summary_large_image"
+
 gems:
   - jekyll-paginate
   - jekyll-mentions
