@@ -10,6 +10,8 @@ author: tdkn
 今日は、僕が iOS アプリの開発を進める上で役に立ったな〜と思う資料を紹介したいと思います。
 なお、メモ書きのような感じなので気が向いたら追記することもあるかも。
 
+- 2017/01/20 デザインテンプレートに Apple 公式のUI素材を追加しました。
+
 ## ヒューマン・インタフェースガイドライン
 
 - [iOS Human Interface Guidelines][apple-guildline]
@@ -54,6 +56,7 @@ author: tdkn
 - [TETHR – The Most Beautiful iOS Design Kit Ever Made – by InVision](https://www.invisionapp.com/tethr)
 - [Oz Pinhas - iOS 10 UI (GUI) kit for Sketch and Photoshop](http://ozzik.co/freebies/ios10kit)
 - [iOS 10 GUI (iPhone) — Facebook Design](http://facebook.design/ios10)
+- [Resources - iOS Human Interface Guidelines](https://developer.apple.com/ios/human-interface-guidelines/resources/)
 
 
 ## マテリアル
