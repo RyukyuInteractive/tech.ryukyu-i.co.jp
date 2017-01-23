@@ -11,6 +11,7 @@ author: tdkn
 なお、メモ書きのような感じなので気が向いたら追記することもあるかも。
 
 - 2017/01/20 デザインテンプレートに Apple 公式のUI素材を追加しました。
+- 2017/01/23 審査に関わるガイドラインへのリンクを追加しました。
 
 ## ヒューマン・インタフェースガイドライン
 
@@ -27,6 +28,11 @@ author: tdkn
   - UIKitの各クラスの詳細を知りたいときに。これは、Xcode からも参照出来る情報ではありますが、やっぱり Web から見るほうが何かとラクなので。メソッドやプロパティ、継承元クラスなどが分かるので重宝します。
 - [iOSアプリケーション：プログラミングガイド][ios-programing-guide-jp]
   - アプリケーションのライフサイクルのあたりが図解されていて分かりやすいです。
+
+## 審査
+
+- [App Store審査ガイドライン - Apple Developer][app-review-guidelines]
+  - アプリをApp Storeへ申請するにあたって、必ず守らなければならない基準が記載されています。こちらの基準を満たしていなければリジェクトされて対応に追われることになるので、必ず一読して頭に入れておきたいですね。
 
 ## Repl
 
@@ -82,4 +88,5 @@ author: tdkn
 [pttrns]: http://pttrns.com/
 [dribbble-tags-ios]: https://dribbble.com/tags/ios
 [ios-programing-guide-jp]: https://developer.apple.com/jp/documentation/iPhoneAppProgrammingGuide.pdf
+[app-review-guidelines]: https://developer.apple.com/app-store/review/guidelines/jp/
 [ibm-swift-sandbox]: https://swiftlang.ng.bluemix.net/#/repl
