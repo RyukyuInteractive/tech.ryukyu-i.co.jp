@@ -5,7 +5,7 @@ import browserSync from 'browser-sync';
 import webpack from 'webpack-stream';
 import plumber from 'gulp-plumber';
 import bourbon from 'node-bourbon';
-import cp from 'child_process';
+import { spawn } from 'child_process';
 import webpackConfig from './webpack.config.js';
 
 let messages = {
@@ -43,7 +43,7 @@ const opts = {
 
 gulp.task('jekyll-build', done => {
   browserSync.notify(messages.jekyllBuild);
-  return cp.spawn('bundle' , ['exec', 'jekyll', 'build'], { stdio: 'inherit' })
+  return spawn('bundle' , ['exec', 'jekyll', 'build'], { stdio: 'inherit' })
     .on('close', done);
 });
 
