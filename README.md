@@ -8,12 +8,13 @@
 
 ## Requirements
 - Ruby (RubyGems)
-- Node (npm)
+- Node.js
+- [Yarn](https://yarnpkg.com/)
 
-## Install
+## Install dependencies
 1. `$ gem install bundler`
 2. `$ bundle install`
-3. `$ npm install`
+3. `$ yarn install`
 
 ## Build & Preview
 - `$ gulp`
