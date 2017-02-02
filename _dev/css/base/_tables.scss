@@ -13,7 +13,7 @@ th {
   text-align: left;
 }
 
-td {
+td:not([data-line-number]) {
   border-bottom: $base-border;
   padding: $small-spacing 0;
 }
