@@ -35,7 +35,6 @@
     "webpack-stream": "^3.2.0"
   },
   "dependencies": {
-    "csshake": "^1.5.1",
     "gsap": "^1.19.0",
     "jquery": "^3.1.0",
     "node-bourbon": "^4.2.8",

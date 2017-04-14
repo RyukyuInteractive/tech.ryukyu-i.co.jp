@@ -183,6 +183,11 @@ hr {
     opacity: 1.0;
     transform: translateY(-2px);
     box-shadow: 0 18px 35px rgba(50,50,93,.1),0 8px 15px rgba(0,0,0,.07);
+
+    .readmore {
+      background-color: #464646;
+      color: white;
+    }
   }
 
   strong {
@@ -203,11 +208,6 @@ hr {
     padding: 0 0.5em;
     transition: 0.3s ease;
     background-color: transparent;
-
-    &:hover {
-      background-color: #464646;
-      color: white;
-    }
   }
 
   &-meta {
