@@ -418,8 +418,6 @@ hr {
   padding-bottom: .08em;
   border-bottom: 2px solid rgba(0, 0, 0, 0.05);
   font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic";
-  -webkit-transition: border 300ms linear;
-  -moz-transition: border 300ms linear;
   transition: border 300ms linear;
 }
 
