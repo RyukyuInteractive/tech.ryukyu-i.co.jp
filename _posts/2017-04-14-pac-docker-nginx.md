@@ -60,7 +60,7 @@ services:
       - '80:80'
     volumes:
       - ./images/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
-      - ~/sites:/var/www/html
+      - ~/www:/var/www/html
 ```
 
 ## Nginx
