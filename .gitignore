@@ -1,4 +1,18 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# node
 node_modules
+
+# PHPStorm
+.idea
+
+# MacOS
+.DS_Store
+
+# other
+*.swp
+*.log
+*.zip
+*~
