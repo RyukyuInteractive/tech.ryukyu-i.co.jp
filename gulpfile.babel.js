@@ -37,7 +37,7 @@ const opts = {
       baseDir: paths.baseDir
     },
     browser: 'default',
-    open: true,
+    open: false,
   },
   webpack: webpackConfig
 };
