@@ -19,6 +19,13 @@
 ## Build & Preview
 - `$ gulp`
 
+## [npm-scripts](https://docs.npmjs.com/misc/scripts)
+
+For example, if you want to run `ncu -u`, you can run like this.
+```
+$ npm run -- -u
+```
+
 ## Notice
 - Filename: `_posts/:year/:month/YYYY-MM-DD-TITLE.md`
 - Directory structure:
