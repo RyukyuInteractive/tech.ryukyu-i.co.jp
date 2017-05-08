@@ -65,3 +65,6 @@ exclude:
   - .editorconfig
   - .ruby-version
 
+collections:
+  npm:
+    output: true

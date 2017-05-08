@@ -22,7 +22,8 @@ const paths = {
     '*.html',
     '_includes/*.html',
     '_layouts/*.html',
-    '_posts/**/*'
+    '_posts/**/*',
+    '_npm/**/*'
   ]
 };
 
