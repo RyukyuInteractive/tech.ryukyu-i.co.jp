@@ -3,7 +3,7 @@ layout: post
 title:  'Material-UI - Style'
 date:   2017-05-11 00:00:00 +0900
 comments: false
-author: uu-fish
+author: uufish
 typora-root-url: ..
 ---
 
