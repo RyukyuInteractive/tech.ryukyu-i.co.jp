@@ -54,4 +54,4 @@ $ npm run -- -u
 - [x] disqus
 - [ ] super cool design
 - [ ] tags & categories
-- [ ] https
+- [x] https
