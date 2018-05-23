@@ -359,6 +359,11 @@ pre code {
   vertical-align: text-bottom;
 }
 
+.footnote {
+  font-size: .5em;
+  vertical-align: top;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
