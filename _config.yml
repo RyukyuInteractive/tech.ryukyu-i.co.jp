@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tech.ryukyu-i.co.jp" # the base hostname & protocol for your site
 twitter_username: ""
-github_username:  "RyukyuInteractive"
+github_username: "RyukyuInteractive"
 
 google_analytics: "UA-84396323-1"
 disqus_shortname: "ri-tech"
@@ -46,8 +46,8 @@ paginate: 5
 paginate_path: "/page/:num/"
 
 author:
-  name     : "RyukyuInteractiveInc"
-  bio      : "Be the leading internet company by creative technologies"
+  name: "RyukyuInteractiveInc"
+  bio: "Be the leading internet company by creative technologies"
 
 # Exclude these files from your production _site
 exclude:
@@ -64,6 +64,8 @@ exclude:
   - .babelrc
   - .editorconfig
   - .ruby-version
+  - .bundle
+  - vendor/bundle
 
 collections:
   npm:

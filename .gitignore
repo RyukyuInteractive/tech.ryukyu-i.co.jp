@@ -16,3 +16,6 @@ node_modules
 *.log
 *.zip
 *~
+
+/.bundle/
+/vendor/bundle
