@@ -29,10 +29,6 @@
       white-space: pre;
       padding: 0 !important;
       background-color: transparent;
-
-      * {
-        white-space: nowrap; // this sets all children inside to nowrap
-      }
     }
   }
 
