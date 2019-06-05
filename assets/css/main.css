@@ -770,10 +770,6 @@ hr {
   background-color: transparent;
 }
 
-.highlight pre code * {
-  white-space: nowrap;
-}
-
 .highlight .c {
   color: #998;
   font-style: italic;
