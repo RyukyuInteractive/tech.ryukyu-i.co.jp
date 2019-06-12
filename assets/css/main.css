@@ -290,6 +290,22 @@ h6 {
   font-size: 1rem;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em;
+}
+
+h1 + h2,
+h2 + h3,
+h3 + h4,
+h4 + h5,
+h5 + h6 {
+  margin-top: 0;
+}
+
 p {
   margin: 0 0 0.75em;
 }
