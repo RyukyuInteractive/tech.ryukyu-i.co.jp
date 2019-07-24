@@ -74,7 +74,7 @@ Note: ↑は`assert`関数を有効化していますが、`zend.assertions`はi
 (power-assertみたいに！なんて欲は言いません)  
 (「明示的にdescriptionを書け」なんてご無体なことは言わないでください、お願いします...)
 
-[PHPでテスティングフレームワークを実装する前に知っておきたい勘所 #phperkaigi by 黒點 さん - niconare](https://niconare.nicovideo.jp/watch/kn2945)の真似になりますが、pathと行数がわかるんだからなんとかならないかなと思ってやってみた結果、`runTest`をoverrideしてtry/catchしてゴニョっとするのが良さそうです
+[PHPでテスティングフレームワークを実装する前に知っておきたい勘所 #phperkaigi by 黒點 さん - niconare](https://niconare.nicovideo.jp/watch/kn2945)の真似になりますが、pathと行数がわかるんだからなんとかならないかなと思ってやってみた結果、`onNotSuccessfulTest`をoverrideしてゴニョっとするのが良さそうです
 
 base: https://github.com/laravel/laravel/blob/5.7/tests/TestCase.php
 
@@ -87,21 +87,17 @@ abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
 
-    protected function runTest()
+    protected function onNotSuccessfulTest(\Throwable $e): void
     {
-        try {
-            parent::runTest();
-        } catch (\Throwable $e) {
-            $code = $this->getTestCodeFromTrace($e->getTrace());
-            if ($code) {
-                $refrection = new \ReflectionClass(get_class($e));
-                $prop       = $refrection->getProperty('message');
-                $prop->setAccessible(true);
-                $value = $prop->getValue($e);
-                $prop->setValue($e, $value . PHP_EOL . PHP_EOL . $code . PHP_EOL);
-            }
-            throw $e;
+        $code = $this->getTestCodeFromTrace($e->getTrace());
+        if ($code) {
+            $refrection = new \ReflectionClass(get_class($e));
+            $prop       = $refrection->getProperty('message');
+            $prop->setAccessible(true);
+            $value = $prop->getValue($e);
+            $prop->setValue($e, $value . PHP_EOL . PHP_EOL . $code . PHP_EOL);
         }
+        throw $e;
     }
 
     private function getTestCodeFromTrace($trace)
