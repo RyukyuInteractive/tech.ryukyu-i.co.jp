@@ -10,7 +10,7 @@ typora-root-url: ..
 # Laravelアプリケーションのテスト(PHPUnit)のTips
 
 ## テストの前処理
-PHPUnitでは｀PHPUnit\Framework\TestCase::setUp｀をoverrideし、そこでテストの前処理を行うのが一般的ですが、[`Illuminate\Foundation\Testing\TestCase`](https://github.com/laravel/framework/blob/5.8/src/Illuminate/Foundation/Testing/TestCase.php)がoverrideしているので、overrideした場合、`parent::setUp()`を呼び出す必要があります  
+PHPUnitでは`PHPUnit\Framework\TestCase::setUp`をoverrideし、そこでテストの前処理を行うのが一般的ですが、[`Illuminate\Foundation\Testing\TestCase`](https://github.com/laravel/framework/blob/5.8/src/Illuminate/Foundation/Testing/TestCase.php)がoverrideしているので、overrideした場合、`parent::setUp()`を呼び出す必要があります  
 (documentにも明記されています)
 
 ちょっとしたことですが、抜けるとtestが動かなくてハマる、なんてことにもなりかねないので`Illuminate\Foundation\Testing\TestCase::afterApplicationCreated`を使って、`setUp`とは別にoverrideできるmethodを用意するのがお勧めです
