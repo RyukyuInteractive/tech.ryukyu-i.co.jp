@@ -71,7 +71,8 @@ Note: ↑は`assert`関数を有効化していますが、`zend.assertions`はi
 
 素のままでも`assertEquals`などは値のdiffを表示してくれたりして十分便利なのですが、test codeのpathと行数だけじゃなく、test codeを表示してほしいと思いませんか？
 私は思いました  
-(power-assertみたいに！なんて欲は言いません)
+(power-assertみたいに！なんて欲は言いません)  
+(「明示的にdescriptionを書け」なんてご無体なことは言わないでください、お願いします...)
 
 [PHPでテスティングフレームワークを実装する前に知っておきたい勘所 #phperkaigi by 黒點 さん - niconare](https://niconare.nicovideo.jp/watch/kn2945)の真似になりますが、pathと行数がわかるんだからなんとかならないかなと思ってやってみた結果、`runTest`をoverrideしてtry/catchしてゴニョっとするのが良さそうです
 
