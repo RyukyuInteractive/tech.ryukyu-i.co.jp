@@ -17,7 +17,8 @@ PHPUnitでは`PHPUnit\Framework\TestCase::setUp`をoverrideし、そこでテス
 
 base: https://github.com/laravel/laravel/blob/5.7/tests/TestCase.php
 
-```diff
+```php
+<?php
 namespace Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
@@ -79,6 +80,7 @@ Note: ↑は`assert`関数を有効化していますが、`zend.assertions`はi
 base: https://github.com/laravel/laravel/blob/5.7/tests/TestCase.php
 
 ```php
+<?php
 namespace Tests;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
