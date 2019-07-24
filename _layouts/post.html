@@ -7,8 +7,8 @@ layout: default
     <div class="post-meta">
       {% if page.author %}
       <div class="post-meta-avatar">
-        <a href="//github.com/{{ page.author }}">
-          <img src="//github.com/{{ page.author }}.png" alt="Github Avatar">
+        <a href="//github.com/{% if page.author != "uufish" %}{{ page.author }}{% else %}reiwa{% endif %}">
+          <img src="//github.com/{% if page.author != "uufish" %}{{ page.author }}{% else %}reiwa{% endif %}.png" alt="Github Avatar">
         </a>
       </div>
       {% endif %}
