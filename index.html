@@ -19,7 +19,7 @@ title: Home
             </a>
           </div>
           <div class="post-item-meta-detail">
-            <a href="//github.com/{{ post.author }}">@{{ post.author }}</a>
+            <a href="//github.com/{% if post.author != "uufish" %}{{ post.author }}{% else %}reiwa{% endif %}">@{{ post.author }}</a>
             <p><span class="post-meta">{{ post.date | date: "%Y.%m.%d (%a)" }}</span></p>
           </div>
         </div>
