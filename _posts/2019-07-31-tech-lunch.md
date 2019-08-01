@@ -9,8 +9,18 @@ typora-root-url: ..
 
 ## [@naotty](https://github.com/naotty)
 
-### 
-
+### 気になった記事紹介
+- [あなたのチームは「関係性の罠」にはまっていませんか？：日本全国に広がっている「関係の質牧場」にご用心！ \| 立教大学 経営学部 中原淳研究室 \- 大人の学びを科学する \| NAKAHARA\-LAB\.net](http://www.nakahara-lab.net/blog/archive/10562)
+    - チーム内のコミュニケーションを改善しようと考えた矢先に見た記事
+    - 「メンバー間の同調圧力」 には注意しながら進めないといけないなと考えている
+- [OKR を支える CFR \- Taka Umada \- Medium](https://medium.com/@tumada/okr-and-cfr-de62e7757ff9)
+    - CFRは知らなかったので勉強になった
+    - 表になっていてわかりやすいので、別の部署の人達にも見てほしい
+- [AWS Chatbot \- Amazon Web Services](https://aws.amazon.com/jp/chatbot/)
+    - コレを使って今月でどうにかSlackへの通知をやりたい
+    - グラフも出してくれそうなのですごく期待
+- [【CV内田真礼】Webセキュリティ入門編1:ウェブサイトの攻撃手法と対策の実践のチャプター一覧 \| プログラミング学習サービス【paizaラーニング】](https://paiza.jp/works/security/primer/beginner-security1)
+    - セキュリティって勉強する気が湧かないなーって人はコレ見たらいいんじゃないかな
 
 ----
 
