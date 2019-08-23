@@ -102,10 +102,10 @@ export const Foo: FunctionComponent<Props> = (props) => {
 ```
 
 `createRef`の中身を知らなかったので、最初、`createRef`って重くないのかな...
-callback refs[^1]を使ったほうが良いんじゃ...
+callback refs[^3refs]を使ったほうが良いんじゃ...
 とか思ったんですが、reactのcodeを読んでみたら`{ current: null }`を返すってだけだったので、とりあえず安心しました
 
-[^1]: React \– ３つのref https://solutionware.jp/blog/2018/07/25/react-%EF%BC%93%E3%81%A4%E3%81%AEref/
+[^3refs]: [React \– ３つのref \| Solutionware開発ブログ](https://solutionware.jp/blog/2018/07/25/react-%EF%BC%93%E3%81%A4%E3%81%AEref/)
 
 でも、副作用扱うものだからhooksでうまいやり方あるように思ったら、やっぱり[`useRef`](https://ja.reactjs.org/docs/hooks-reference.html#useref)があるー
 
