@@ -22,7 +22,7 @@ typora-root-url: ..
 Laravel 5.8 + Lighthouse 4.1  
 いろいろ試して、asメソッドで別名をつけると取得できた。  
 
-```
+```php
 class Post extends Model
 {
   public function tags(): BelongsToMany
