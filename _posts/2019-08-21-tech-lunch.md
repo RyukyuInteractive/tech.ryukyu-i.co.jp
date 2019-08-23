@@ -125,7 +125,7 @@ callback refs[^3refs]を使ったほうが良いんじゃ...
 
 [Lighthouse-php](https://lighthouse-php.com/)も対応[^lighthouse-php-defer]しているようなので、laravelなprojectでも！  
 
-[^lighthouse-php-defer]: [Deferred Fields | Lighthouse](https://lighthouse-php.com/4.1/performance/deferred.html)
+[^lighthouse-php-defer]: [Deferred Fields \| Lighthouse](https://lighthouse-php.com/4.1/performance/deferred.html)
 
 
 ---
