@@ -34,7 +34,7 @@ class Post extends Model
 }
 ```
 
-```
+```graphql
 type Post {
   id: ID!
   post_tag: pivotTable
@@ -45,7 +45,7 @@ type pivotTable {
 }
 ```
 
-```
+```graphql
 query {
   post {
     id
