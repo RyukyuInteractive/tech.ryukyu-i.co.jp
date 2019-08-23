@@ -17,8 +17,53 @@ typora-root-url: ..
 - [脱PHP初心者！インターフェイスを理解しよう \- Qiita](https://qiita.com/KNJ/items/210b0b119d45927eca1e)
     - イラストがあるとわかりやすい
     - 特にGitの方はゆるい感じがあってとても良い
+  
+### BelongsToManyでリレーションしている中間テーブルの `created_at` を取得したかった
+Laravel 5.8 + Lighthouse 4.1  
+いろいろ試して、asメソッドで別名をつけると取得できた。  
 
+```
+class Post extends Model
+{
+  public function tags(): BelongsToMany
+  {
+    return $this->belongsToMany('App\Tag')
+                  ->as('post_tag')
+                  ->withTimestamps();
+  }
+}
+```
 
+```
+type Post {
+  id: ID!
+  post_tag: pivotTable
+}
+
+type pivotTable {
+  created_at
+}
+```
+
+```
+query {
+  post {
+    id
+    created_at
+    tags {
+      data {
+        id
+        post_tag {
+          created_at
+        }  
+      }
+    }
+  }
+}
+```
+
+ただ、もっとシンプルにhasManyから取得できるようにしたので使わないことになったけど、  
+やり方が分かったってことでいいかな(^^;
 
 
 ----
@@ -57,10 +102,10 @@ export const Foo: FunctionComponent<Props> = (props) => {
 ```
 
 `createRef`の中身を知らなかったので、最初、`createRef`って重くないのかな...
-callback refs[^1]を使ったほうが良いんじゃ...
+callback refs[^3refs]を使ったほうが良いんじゃ...
 とか思ったんですが、reactのcodeを読んでみたら`{ current: null }`を返すってだけだったので、とりあえず安心しました
 
-[^1]: [React – ３つのref | Solutionware開発ブログ](https://solutionware.jp/blog/2018/07/25/react-%EF%BC%93%E3%81%A4%E3%81%AEref/)
+[^3refs]: [React – ３つのref | Solutionware開発ブログ](https://solutionware.jp/blog/2018/07/25/react-%EF%BC%93%E3%81%A4%E3%81%AEref/)
 
 でも、副作用扱うものだからhooksでうまいやり方あるように思ったら、やっぱり[`useRef`](https://ja.reactjs.org/docs/hooks-reference.html#useref)があるー
 
