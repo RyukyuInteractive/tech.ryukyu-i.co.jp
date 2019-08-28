@@ -19,7 +19,6 @@ typora-root-url: ..
 ### Emacsのpackages(表示部)
 
 @jhonyspicy がVim(keybind)にチャレンジ中とのことなので、対抗して私が使っているEmacsのpackageの紹介をｗ  
-([Spacemacs](http://spacemacs.org/)を参考にしたpackage)
 
 ![Screenshot](/images/2019/08/Screenshot%20from%202019-08-28%2013-31-05.png)
 
