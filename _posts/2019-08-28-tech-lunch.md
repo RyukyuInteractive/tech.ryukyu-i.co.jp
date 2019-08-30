@@ -9,8 +9,42 @@ typora-root-url: ..
 
 ## [@naotty](https://github.com/naotty)
 
-### 
+### Lighthouse(GraphQL Server)のテストでエラーになる
+テスト内でMutationを2回連続で呼び出そうとしたら、2回目がエラーになった。  
+エラーはこんな感じ。      
 
+```PHP
+Failed asserting that Array &0 (
+  'debugMessage' => 'Undefined offset: 2'
+  'message' => 'Internal server error'
+  'extensions' => Array &1 (
+      'category' => 'internal'
+  )
+```
+
+初回のqueryの値を保持しているのが原因らしいので、 `$this->refreshApplication()` をやろうとするもデータもごっそり消えるので使えず。  
+あと、 `$this->app->forgetInstance(\Nuwave\Lighthouse\Execution\GraphQLRequest::class);` を試してみても解消せず。  
+  
+初回のはデータを作りたかっただけなので、model使って作ることで回避した。  
+渡す値を変えずに複数回呼び出すのであれば、下記のように呼び出すのがいいのかもしれない。  
+(参照元: https://github.com/nuwave/lighthouse/blob/6eacda84457d9e699f9beb26dff955551660bfad/tests/Integration/Execution/DataLoader/BatchLoaderTest.php#L50)  
+
+```PHP
+$this->postGraphQL([
+  [
+      'query' => $query,
+      'variables' => [
+          'id' => $users[0]->getKey(),
+      ],
+  ],
+  [
+      'query' => $query,
+      'variables' => [
+          'id' => $users[1]->getKey(),
+      ],
+  ],
+])
+```
 
 ----
 
