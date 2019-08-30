@@ -13,7 +13,7 @@ typora-root-url: ..
 テスト内でMutationを2回連続で呼び出そうとしたら、2回目がエラーになった。  
 エラーはこんな感じ。      
 
-```PHP
+```php
 Failed asserting that Array &0 (
   'debugMessage' => 'Undefined offset: 2'
   'message' => 'Internal server error'
@@ -29,7 +29,7 @@ Failed asserting that Array &0 (
 渡す値を変えずに複数回呼び出すのであれば、下記のように呼び出すのがいいのかもしれない。  
 (参照元: https://github.com/nuwave/lighthouse/blob/6eacda84457d9e699f9beb26dff955551660bfad/tests/Integration/Execution/DataLoader/BatchLoaderTest.php#L50)  
 
-```PHP
+```php
 $this->postGraphQL([
   [
       'query' => $query,
