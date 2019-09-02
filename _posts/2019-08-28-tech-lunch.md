@@ -66,5 +66,5 @@ $this->postGraphQL([
   - 右のminimap
   - emacsのscrollbarを格好良くする方法が見つからなくて...
 - popwin
-  - magit-statueなど、たまに見るだけのものを表示するのに使ってます
+  - magit-statusなど、たまに見るだけのものを表示するのに使ってます
 
