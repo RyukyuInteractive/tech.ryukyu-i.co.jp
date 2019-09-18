@@ -17,4 +17,11 @@ typora-root-url: ..
 
 ## [@atomita](https://github.com/atomita)
 
-### 
+### [MySQL date attributes can not be read from paginated HasMany relations · Issue #776 · nuwave/lighthouse](https://github.com/nuwave/lighthouse/issues/776)
+
+状況をざっくばらんに話しました  
+ググっても似たような話が見つからないんですねよねぇ... 私の手には余る問題かな(^^;
+
+### 他
+
+productで対応中のissueの話しとか
