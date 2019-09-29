@@ -9,8 +9,15 @@ typora-root-url: ..
 
 ## [@naotty](https://github.com/naotty)
 
-### 
+### 気になった記事紹介
+- [GitHub ActionsでPull Requestに自動的にラベルを付与してレビューをしやすくする ｜ DevelopersIO](https://dev.classmethod.jp/tool/github/github-actions-pull-request-labeler/)
+    - 今のプロジェクトに入れた。
+    - あとは [technote\-space/assign\-author: GitHub Action to assign author to issue or PR](https://github.com/technote-space/assign-author) でPull Requestの作成者をAssigneesにするようにした。
+    - とても便利なので、今度はCIをやろうと思う。
 
+### コードレビュー
+- if文の条件を複雑にしてたり、よくわかんない関数名つけたりしてるので、改めてコードレビューの輪読会をやらないとと思ってる。
+    - 3ヶ月後、読めなくなるよと
 
 ----
 
