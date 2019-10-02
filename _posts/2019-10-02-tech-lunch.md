@@ -20,8 +20,8 @@ typora-root-url: ..
 
 ### 気になった記事紹介
 
-- 
-
+- [３Dプリンターで家をつくる時代に！ 日本での導入は？](https://www.excite.co.jp/news/article/Suumo_166958/)
+- [Detect dark mode using JavaScript](https://stackoverflow.com/questions/56393880/detect-dark-mode-using-javascript)
 
 ----
 
