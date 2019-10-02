@@ -29,5 +29,11 @@ typora-root-url: ..
 
 ### 気になった記事紹介
 
-- 
+- [アマゾンの謎の通信規格｢Sidewalk｣が秘めた新戦略 ── これは｢異例中の異例｣だ | BUSINESS INSIDER JAPAN](https://www.businessinsider.jp/post-199491)
+  - これはIoTで多用されていく予感
+  - Bluetoothで接続できる鍵とか、もう少し距離おいても操作できると便利だと思います
+- [タチの悪い凄腕エンジニア｜フロイド｜note](https://note.mu/floyd0/n/n1db7854ca2e2)
+  - あ、俺、アリスだわ
+- [1on1.md](https://gist.github.com/noto/26592e3d9f417064bb7b76891fe13f97)
+  - 普段から双方が"本音で話せる関係性を作る"って気持ちをもって望むようにしたらもっと良くなるのかなーと思いました
 
