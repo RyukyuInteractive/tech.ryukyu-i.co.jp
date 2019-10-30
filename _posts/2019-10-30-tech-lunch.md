@@ -30,6 +30,7 @@ step01 branchをcheckoutして、そこからcommitを辿っていく感じで�
 [18f289e](https://github.com/atomita/okinawa-frontend-meetup5/commit/18f289e31306bb9a9fc18915bbb5e7d478e2faab)
   - deps引数を指定してないじゃん orz
   - [フック API リファレンス – React](https://ja.reactjs.org/docs/hooks-reference.html#usecallback)
+  - DOMのイベントハンドラを更新するコストは削減するけど、関数生成コストは無視する感じなのかな
 - rxjs-hooks & rxjsで`map`してみる
 [8767a50](https://github.com/atomita/okinawa-frontend-meetup5/commit/8767a507468a1d42b7c7fd3446fc509d6f913c05)
   - Okinawa Frontend meetup #5でangularの話しになった影響でrxjs-hooksを試してみたくて
