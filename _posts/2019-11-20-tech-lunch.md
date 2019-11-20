@@ -15,6 +15,14 @@ typora-root-url: ..
 
 ## [@jhonyspicy](https://github.com/jhonyspicy)
 
+[Laravel 6.x 通知](https://readouble.com/laravel/6.x/ja/notifications.htmlhttps://readouble.com/laravel/6.x/ja/notifications.html)
+最近Laravelで ”通知” なるものを知りました。
+メールで通知したり、通知内容をDBに保存して ”既読・未読” の管理が出来るようです。
+
+[Laravel＆Larastan（PHPStan）で静的コード解析を行う](https://www.ritolab.com/entry/189)
+こちらはLaravel向けのコード解析のようで、
+Laravelで利用されるマジックメソッドなども認識してくれるようです。
+
 ### 
 
 ----
