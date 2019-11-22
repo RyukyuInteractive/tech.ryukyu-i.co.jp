@@ -9,7 +9,9 @@ typora-root-url: ..
 
 ## [@naotty](https://github.com/naotty)
 
-### 
+### 楽しみにしているAdvent Calendar
+これ [本番環境でやらかしちゃった人 Advent Calendar 2019 \- Qiita](https://qiita.com/advent-calendar/2019/yarakashi-production)  
+絶対面白いのと、原因・対策などの知見が一気に集まると思うので正座して期待しているw
 
 ----
 
