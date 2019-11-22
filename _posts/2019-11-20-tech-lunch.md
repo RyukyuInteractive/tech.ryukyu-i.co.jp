@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  'Tech Lunch 2019-11-13'
-date:   2019-11-13 13:30:00 +0900
+title:  'Tech Lunch 2019-11-20'
+date:   2019-11-20 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
@@ -25,13 +25,11 @@ typora-root-url: ..
 こちらはLaravel向けのコード解析のようで、
 Laravelで利用されるマジックメソッドなども認識してくれるようです。
 
-### 
-
 ----
 
 ## [@atomita](https://github.com/atomita)
 
-## 印刷ためのCSSを少し紹介
+### 印刷ためのCSSを少し紹介
 
 - `@page { size:landscape; }`
   - これで用紙の向きを横にできます
