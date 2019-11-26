@@ -33,11 +33,11 @@ Laravelで利用されるマジックメソッドなども認識してくれる�
 
 - `@page { size:landscape; }`
   - これで用紙の向きを横にできます
-  - [size - CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/@page/size#Browser_compatibility)
+  - [size \- CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/@page/size#Browser_compatibility)
   - chromiumは効きました
 - `page-break-after: always`
   - 改ページを挿入できます
-  - [page-break-after - CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/page-break-after)
+  - [page-break-after \- CSS: カスケーディングスタイルシート | MDN](https://developer.mozilla.org/ja/docs/Web/CSS/page-break-after)
   - `page-break-before`もある
 
 
