@@ -39,8 +39,14 @@ jsやcssも遅延読み込みできるようです。
 
 ## [@jhonyspicy](https://github.com/jhonyspicy)
 
-### 
+### LTしてきました。
 
+[v-okinawa meetup #3 年末LT大会 初心者歓迎](https://v-okinawa.connpass.com/event/158713/)
+こちらのイベントにてLTしてきました。
+話しした内容は今年の夏、
+会社の合宿にて作ったChrome向けの拡張機能なのですが、
+TypeScript ＋ Vue.js で作られていまして、Googleの検索結果ページにQiitaの記事も検索してウィジェットを表示できるように
+したもので、なかなかいいリアクションをいただけました。
 
 ----
 
