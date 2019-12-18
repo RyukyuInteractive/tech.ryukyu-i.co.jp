@@ -46,5 +46,19 @@ jsやcssも遅延読み込みできるようです。
 
 ## [@atomita](https://github.com/atomita)
 
-### 
+### 気になった記事紹介
+
+- [[和訳] Dropboxアカウントのせいで胃潰瘍になった - Qiita](https://qiita.com/ktnyt/items/a4729e11b465c8f65478)
+  - 面白い事案
+  - 巻き込まれる立場だったら笑ってられないけど
+
+### 軽くTechPlayのイベント参加報告
+
+[「沖縄の技術/暮らし/はたらく」について考えるEngineer Meetup 〜技術、コミュニティ、生活、仕事などリアルな情報を公開します〜｜IT勉強会ならTECH PLAY［テックプレイ］](https://techplay.jp/event/758297)
+
+15分は案外短くて、Laravel + GraphQLを始めるDemoをちゃんとできなかったのは残念でした
+
+イベントページでスライド公開okってしておいたけど、まだ公開されてないっぽい？ので、自分でspeakerdeckにuploadしちゃいます  
+[Webシステム開発事例 と GraphQL Server with Laravel - Speaker Deck](https://speakerdeck.com/atomita/websisutemukai-fa-shi-li-to-graphql-server-with-laravel)
+
 
