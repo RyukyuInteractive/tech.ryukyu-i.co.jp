@@ -16,7 +16,7 @@ typora-root-url: ..
 
 ### microCMS+Next.jsでブログ作成チュートリアルをやってみた
 
-発表資料は[コチラ](https://github.com/RyukyuInteractive/tech.ryukyu-i.co.jp/files/10203625/microCMS.pdf)
+発表資料は[コチラ](https://github.com/RyukyuInteractive/tech.ryukyu-i.co.jp/files/10203687/microCMS.pdf)
 
 microCMSがで用意しているチュートリアルをやってみた話。
 [microCMS + Next.jsでJamstackブログを作ってみよう | microCMSブログ](https://blog.microcms.io/microcms-next-jamstack-blog/)
