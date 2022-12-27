@@ -7,11 +7,7 @@ author: atomita
 typora-root-url: ..
 ---
 
-## [@naotty](https://github.com/naotty)
 
-
-
-----
 ## [@taichiyam](https://github.com/taichiyam)
 
 ### microCMS+Next.jsでブログ作成チュートリアルをやってみた
