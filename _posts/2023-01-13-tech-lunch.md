@@ -14,7 +14,7 @@ typora-root-url: ..
 
 - 発表資料
   - [Next.jsでMSW（Mock Service Worker）を利用してみた.pdf](https://github.com/RyukyuInteractive/tech.ryukyu-i.co.jp/files/10421746/Next.js.MSW.Mock.Service.Worker.pdf)
-- [前回](https://tech.ryukyu-i.co.jp/2022/12/09/tech-lunch/)準備にたMicroCMSのAPIのモックをMSWを使って作成
+- [前回](https://tech.ryukyu-i.co.jp/2022/12/09/tech-lunch/)準備したMicroCMSのAPIに対するモックをMSWを使って作成
 - MSWとは
   - MSW(Mock Service Worker)
     - モックのAPIサーバを
