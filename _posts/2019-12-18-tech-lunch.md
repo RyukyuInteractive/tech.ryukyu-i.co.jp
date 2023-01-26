@@ -7,12 +7,6 @@ author: atomita
 typora-root-url: ..
 ---
 
-## [@naotty](https://github.com/naotty)
-
-### 
-
-
-----
 
 ## [@TatsuyaUshioda](https://github.com/TatsuyaUshioda)
 
