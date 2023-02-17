@@ -30,3 +30,6 @@ typora-root-url: ..
 
 ## [@atomita](https://github.com/atomita)
 
+docker composeでdocker-compose.ymlを複数読み込む方法を紹介しました
+
+laradockを利用する際に、laradockのdocker-compose.ymlに手を入れずに別途読み込むことで、laradockを最新にしたりするのが楽になるのでお勧め！
