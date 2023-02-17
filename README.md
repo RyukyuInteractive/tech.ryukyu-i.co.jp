@@ -1,4 +1,4 @@
-# RyukyuInteractive Tech Blog
+# Interactive Tech Blog
 [![ri-tech](https://img.shields.io/badge/team-technology-blue.svg?style=flat)](http://tech.ryukyu-i.co.jp)
 [![syntax](https://img.shields.io/badge/syntax-enabled-ff69b4.svg?style=flat)](http://rouge.jneen.net/)
 [![emoji](https://img.shields.io/badge/emoji-available-brightgreen.svg?style=flat)](http://emoji-cheat-sheet.com/)
