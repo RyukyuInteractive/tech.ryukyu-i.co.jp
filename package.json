@@ -31,11 +31,11 @@
     "browserify-versionify": "^1.0.6",
     "gulp": "^4.0.0",
     "gulp-plumber": "^1.2.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "gulp-stylus": "^2.7.0",
     "ify-loader": "^1.1.0",
     "json-loader": "^0.5.7",
-    "npm-check-updates": "^2.14.2",
+    "npm-check-updates": "^16.7.4",
     "transform-loader": "^0.2.4",
     "webpack-stream": "^5.1.1"
   },
