@@ -15,6 +15,17 @@ typora-root-url: ..
 
 ## [@taichiyam](https://github.com/taichiyam)
 
+個人メモにObsidianを使い始めた話
+気になった人は触ってみてね
+
+```bash
+  brew install --cask obsidian
+```
+
+## 参考リンク
+- [Obsidian](https://obsidian.md/)
+- [Obsidianは最高のマークダウン『メモ』アプリである](https://pouhon.net/obsidian-introduction/5666/)
+- [Obsidian がすごくいい](https://zenn.dev/usagizmo/articles/beb73159edbe68)
 
 ---
 
