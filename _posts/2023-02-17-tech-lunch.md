@@ -15,7 +15,7 @@ typora-root-url: ..
 
 ## [@taichiyam](https://github.com/taichiyam)
 
-個人メモにObsidianを使い始めた話
+個人メモにObsidianを使い始めた話  
 気になった人は触ってみてね
 
 ```bash
