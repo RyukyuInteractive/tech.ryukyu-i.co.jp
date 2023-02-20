@@ -9,6 +9,23 @@ typora-root-url: ..
 
 
 ## [@naotty](https://github.com/naotty)
+### AWS Amplifyがステキ
+[AWS Amplify（アプリケーションの構築とデプロイ）\| AWS](https://aws.amazon.com/jp/amplify/)
+
+Next.jsのデプロイ先としてAWS Amplifyを使おうと考えている。  
+実際触ってみて、次のステキポイントを紹介した。  
+
+- GitHub連携したらNext.jsってのを自動で判定してデプロイしてくれる
+- Basic認証が付いている
+- ブランチ毎でサイトを立ち上げることができる
+  - CLIでNext.jsと認識させないといけない点は今後に期待
+      - [node\.js \- How to solve AWS Amplify error: CustomerError Framework Web not supported \- Stack Overflow](https://stackoverflow.com/questions/74595024/how-to-solve-aws-amplify-error-customererror-framework-web-not-supported)
+- Route53と繋げたら独自ドメインの設定やTLS/SSL証明書の発行がとても簡単
+- プレビュー機能を使えばプルリク作った時に確認用のサイトが立ち上がる
+- お安い
+
+横展開していきたいお気持ち。
+
 
 ---
 
