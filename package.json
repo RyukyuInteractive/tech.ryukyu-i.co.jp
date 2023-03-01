@@ -35,7 +35,7 @@
     "gulp-stylus": "^2.7.0",
     "ify-loader": "^1.1.0",
     "json-loader": "^0.5.7",
-    "npm-check-updates": "^2.14.2",
+    "npm-check-updates": "^16.7.10",
     "transform-loader": "^0.2.4",
     "webpack-stream": "^5.1.1"
   },
