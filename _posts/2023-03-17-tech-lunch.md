@@ -27,4 +27,8 @@ __令和４年度沖縄型オープンイノベーション創出促進事業に
 ---
 
 ## [@ip-san](https://github.com/ip-san)
-
+__カスタマージャーニマップをつくってみた__
+- カスタマージャーニーマップ（CJM）とは
+- ワークショップを行う時のポイント
+- [作成したペルソナ](https://docs.google.com/spreadsheets/d/1VSN1srXJkNxBqEUQ1sdg7IO_I3oT2TdZo8DAxF5uyg4/edit#gid=0)
+- [作成したカスタマージャーニーマップ](https://docs.google.com/spreadsheets/d/1VSN1srXJkNxBqEUQ1sdg7IO_I3oT2TdZo8DAxF5uyg4/edit#gid=2025882873)
