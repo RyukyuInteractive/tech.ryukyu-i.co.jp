@@ -9,7 +9,12 @@ typora-root-url: ..
 
 
 ## [@naotty](https://github.com/naotty)
-### 
+### LaravelのStaging環境を楽運用 + お安くしたい
+Staging環境を作るにあたり、EC2 + RDSだとちょっともったいない、EC2にLaravelとMySQL乗せると構築・運用が大変なので、Lightsail + RDSを使うことにした。  
+Lightsailは$5のプラン・SSL/TLS 証明書はLet’s Encrypt、デプロイは [30分でできる！CodePipelineを利用してAmazon Lightsailに継続的にデプロイする方法 \- ABIST\_AI](https://blog.abist-ai.com/entry/codepipeline-lightsail) を参考にGitHub連携するようにした。  
+RDSは [【5分で簡単！】Amazon EventBridge SchedulerでRDSの自動定期停止を実装してみた \| DevelopersIO](https://dev.classmethod.jp/articles/amazon-eventbridge-scheduler-rds-stop/) を参考にスケジュール起動・停止をして必要な分だけ使うようにした。  
+これで$20/月ぐらい + 楽に運用できるはず(^^
+
 
 ---
 
