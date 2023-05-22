@@ -7,8 +7,8 @@ author: atomita
 typora-root-url: ..
 ---
 
-## [@MotoiOkuhira](https://github.com/MotoiOkuhira)
-### ChatGPTを使ってこんなんやりたいんや！
+## ChatGPTを使ってこんなんやりたいんや！[@MotoiOkuhira](https://github.com/MotoiOkuhira)
+
 - 先週のチームMTGでクライアントの課題をより深く知る事を目的としたChatGPTを使ったチャットサービスを作ると提案した。
 
 - しかしテキストのみだった事とあまり内容を固めていなかったのであまり伝わらなかった ﻿
@@ -106,8 +106,8 @@ Myoutdeskllc\LaravelAnalyticsV4\LaravelAnalyticsV4をmock化してAPI呼び出�
 
 ---
 
-## [@naotty](https://github.com/naotty)
-###  actでSetup PHPを使う時はイメージを変える
+## actでSetup PHPを使う時はイメージを変える[@naotty](https://github.com/naotty)
+
 LaravelのテストをGitHub Actionsで回すようにしたかったので、 [`nektos/act`](https://github.com/nektos/act) で一通り動いてからpushしようと。PHPは今後のことも考えて [shivammathur/setup\-php: GitHub action to set up PHP with extensions, php\.ini configuration, coverage drivers, and various tools\.](https://github.com/shivammathur/setup-php) を使うことにした。  
 ・・が、何も考えずにactを実行すると「| ==> Setup PHP」から進まないorz  
 actで使うイメージを↓のように変更したら通るようになった。
@@ -116,7 +116,7 @@ actで使うイメージを↓のように変更したら通るようになっ�
 $ act -P ubuntu-latest=shivammathur/node:2204
 ```
 
-###  actではサービスコンテナが使えない
+##  actではサービスコンテナが使えない[@naotty](https://github.com/naotty)
 ↑の続き。  
 workflowファイルではMySQLをサービスコンテナとして指定しているが、actではそれが使えないとのこと。  
 ref. [nektos/act: Run your GitHub Actions locally 🚀](https://github.com/nektos/act#known-issues)  
