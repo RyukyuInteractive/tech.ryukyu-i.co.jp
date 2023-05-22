@@ -22,10 +22,6 @@ typora-root-url: ..
 - 使いやすくするためにあらかじめ相談内容の項目があり、フォームに必要内容を入力→バックではあらかじめプロンプトの雛形が入っており、入力したフォームの内容が雛形に入っていくイメージ→質問内容はDBに保存して確認できる様にしたい
 
 - まずは社内ツールとして使えるようにプロトタイプを作りたい
----
-
-## [@taichiyam](https://github.com/taichiyam)
-### 
 
 ---
 
@@ -109,5 +105,24 @@ typora-root-url: ..
 ---
 
 ## [@naotty](https://github.com/naotty)
-### 
+###  actでSetup PHPを使う時はイメージを変える
+LaravelのテストをGitHub Actionsで回すようにしたかったので、 [`nektos/act`](https://github.com/nektos/act) で一通り動いてからpushしようと。PHPは今後のことも考えて [shivammathur/setup\-php: GitHub action to set up PHP with extensions, php\.ini configuration, coverage drivers, and various tools\.](https://github.com/shivammathur/setup-php) を使うことにした。  
+・・が、何も考えずにactを実行すると「| ==> Setup PHP」から進まないorz  
+actで使うイメージを↓のように変更したら通るようになった。
+
+```shell
+$ act -P ubuntu-latest=shivammathur/node:2204
+```
+
+###  actではサービスコンテナが使えない
+↑の続き。  
+workflowファイルではMySQLをサービスコンテナとして指定しているが、actではそれが使えないとのこと。  
+ref. [nektos/act: Run your GitHub Actions locally 🚀](https://github.com/nektos/act#known-issues)  
+  
+なので、MySQLはlocalの開発環境を見るようにした。
+
+
+
+
+
 
