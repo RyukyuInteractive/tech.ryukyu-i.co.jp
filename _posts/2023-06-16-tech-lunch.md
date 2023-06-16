@@ -8,8 +8,10 @@ typora-root-url: ..
 ---
 
 ## [@MotoiOkuhira](https://github.com/MotoiOkuhira)
-### 
-
+### ChatGPT APIを使ったチャットbotを作りかけた話
+ChatGPTに頼りまくってChatGPT APIを使ったチャットbotを3時間でどこまでいけるか挑戦してみた
+開発環境構築に2時間かかってしまい、エラーの原因が分からず時間切れ
+結論：ChatGPTのAPIを触る前にDockerとエラーの調査方法をちゃんと勉強しようよ
 ---
 
 ## [@taichiyam](https://github.com/taichiyam)
