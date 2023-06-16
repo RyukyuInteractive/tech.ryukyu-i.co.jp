@@ -13,7 +13,13 @@ typora-root-url: ..
 ---
 
 ## [@taichiyam](https://github.com/taichiyam)
-### 
+### オススメ本紹介『入門 起業の科学』
+
+スタートアップウィークエンドの予習にもオススメ  
+『入門 起業の科学』を紹介しました。  
+
+[テックランチ202306.pdf](https://github.com/RyukyuInteractive/tech.ryukyu-i.co.jp/files/11765959/202306.pdf)
+
 
 ---
 
