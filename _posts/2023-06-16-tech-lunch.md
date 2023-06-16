@@ -18,7 +18,7 @@ typora-root-url: ..
 スタートアップウィークエンドの予習にもオススメ  
 『入門 起業の科学』を紹介しました。  
 
-[オススメ本『入門 起業の科学』]([https://github.com/RyukyuInteractive/tech.ryukyu-i.co.jp/files/11765959/202306.pdf](https://www.docswell.com/s/8826733942/ZNRJDW-2023-06-16-tech-lunch)https://www.docswell.com/s/8826733942/ZNRJDW-2023-06-16-tech-lunch)
+[オススメ本『入門 起業の科学』](https://www.docswell.com/s/8826733942/ZNRJDW-2023-06-16-tech-lunch)
 
 
 ---
