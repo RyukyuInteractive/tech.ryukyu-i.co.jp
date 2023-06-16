@@ -24,5 +24,8 @@ typora-root-url: ..
 ---
 
 ## [@jhonyspicy](https://github.com/jhonyspicy)
-### 
+### YouTube　Studioのアナリティクスの紹介
+
+インプレッション数やクリック率などのグラフを見ながら
+サムネイルやタイトルをチューニングして改善して行っているという紹介でした。
 
