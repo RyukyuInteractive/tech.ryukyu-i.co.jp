@@ -15,7 +15,12 @@ typora-root-url: ..
 ---
 
 ## [@jhonyspicy](https://github.com/jhonyspicy)
-### 
+### Type Challenge
+TypeScriptの「型」をクイズ形式（？）で勉強することができます。
+初めは考えてもわからないと思うので、問題を理解したらすぐに答えを見た方がいいと思います。
+おそらく、いきなり自力で答えは出せないんじゃないとか。。。
+
+https://github.com/type-challenges/type-challenges/blob/main/README.ja.md
 
 
 
