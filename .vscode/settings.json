@@ -1,0 +1,58 @@
+{
+  "cSpell.words": ["clsx", "openai", "shadcn", "supabase"],
+  "cSpell.ignorePaths": [".vscode"],
+  "deno.enable": false,
+  "editor.formatOnSave": true,
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。　",
+  "eslint.enable": false,
+  "files.associations": {
+    "*.xml": "html",
+    "*.svg": "html",
+    "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    "**/*.lock": true,
+    "**/*.log": true,
+    "**/__generated__": true,
+    "**/node_modules": true,
+    "*.tsbuildinfo": true,
+    ".idea": true,
+    ".next": true,
+    ".sentryclirc": true,
+    "next-env.d.ts": true,
+    "package-lock.json": true
+  },
+  "prettier.enable": true,
+  "search.exclude": {
+    "**/*.log": true,
+    "*.lock": true,
+    "**/node_modules": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@radix-ui",
+    "next/dist",
+    "next/router",
+    "react-day-picker",
+    "tailwind-merge"
+  ],
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": true,
+      "source.organizeImports.biome": true
+    },
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": true,
+      "source.organizeImports.biome": true
+    },
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

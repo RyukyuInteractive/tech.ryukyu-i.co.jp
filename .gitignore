@@ -1,3 +1,8 @@
+# next.js
+/.next/
+/out/
+
+# jekyll
 _site
 .sass-cache
 .jekyll-metadata
