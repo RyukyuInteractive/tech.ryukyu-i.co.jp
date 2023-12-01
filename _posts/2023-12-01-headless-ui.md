@@ -7,20 +7,18 @@ author: reiwa
 typora-root-url: ..
 ---
 
-# どのようなUIライブラリが好ましいか
-
 Reactには色々なUIライブラリがありますが、TailwindCSSを使用できるHeadlessUIなライブラリが使いやすいと感じています。
 コンポーネントのスタイルを調整しやすく、ライブラリの依存が減り変更も容易になります。
 
 その中でも以下の2つは良い気がします。
 
-- Ark UI - https://ark-ui.com/
-- Radix UI Themes - https://www.radix-ui.com/
+- Ark UI - [https://ark-ui.com/](https://ark-ui.com/)
+- Radix UI Themes - [https://www.radix-ui.com/](https://www.radix-ui.com/)
 
 更にそれらを用いたこれらのライブラリが良いと感じました。
 
-- Park UI - https://park-ui.com/
-- shadcn/ui - https://ui.shadcn.com/
+- Park UI - [https://park-ui.com/](https://park-ui.com/)
+- shadcn/ui - [https://ui.shadcn.com/](https://ui.shadcn.com/)
 
 ## HeadlessUIとは
 
@@ -43,7 +41,7 @@ return (
 スタイルが提供できれば良いのでTailwindCSSでもCSS-in-JSでもCSSモジュールでも良いです。
 TailwindCSSのみを使用していてCSS-in-JSは馴染みが無い場合はこちらの記事が参考になります。
 
-https://zenn.dev/takuyakikuchi/articles/b1b20f65d4f9cf
+[https://zenn.dev/takuyakikuchi/articles/b1b20f65d4f9cf](https://zenn.dev/takuyakikuchi/articles/b1b20f65d4f9cf)
 
 ## TailwindCSSだけではダメか
 
@@ -54,7 +52,7 @@ TailwindCSSだけでUIライブラリを自作するのは、Stateやデザイ�
 
 ちなみにTailwindCSSもHeadless UIのライブラリを提供してますが数が少ないです。
 
-https://headlessui.com/
+[https://headlessui.com/](https://headlessui.com/)
 
 TailwindCSSを使用してコンポーネントを開発するなら、何かしらのHeadlessUIを使用するのが良いと思います。
 
@@ -62,7 +60,7 @@ TailwindCSSを使用してコンポーネントを開発するなら、何かし
 
 shadcn/uiはTailwindCSSとRadixUIを用いてコンポーネントを作っています。
 
-https://ui.shadcn.com
+[https://ui.shadcn.com](https://ui.shadcn.com)
 
 ライブラリはそれぞれ以下のような関係になっています。
 
@@ -72,7 +70,7 @@ https://ui.shadcn.com
 
 コンポーネントをローカルのファイルに生成して使用するという方法がとても良いと感じました。
 
-https://ui.shadcn.com/docs/installation/next
+[https://ui.shadcn.com/docs/installation/next](https://ui.shadcn.com/docs/installation/next)
 
 このようにローカルにファイルを作作られます。
 
@@ -113,7 +111,7 @@ ArkUIはHeadlessUIのライブラリのひとつです。ChakraUIのチームが
 
 このページではこのような開発が進んでいる経緯を解説しています。
 
-https://www.adebayosegun.com/blog/the-future-of-chakra-ui
+[https://www.adebayosegun.com/blog/the-future-of-chakra-ui](https://www.adebayosegun.com/blog/the-future-of-chakra-ui)
 
 ## Zag
 
@@ -201,11 +199,11 @@ Headless UIにはスタイルが無いので自分でコードを書いて適用
 
 ArkUIはまだ開発中ですが、これをベースに作られたPark UIはというUIライブラリがあります。
 
-https://park-ui.com/
+[https://park-ui.com/](https://park-ui.com/)
 
 こちらはTailwindCSSとPandaCSSの両方を選ぶことができます。このPandaCSSはChakraUIが開発するゼロランタイムのCss-in-JSライブラリです。
 
-https://github.com/chakra-ui/panda
+[https://github.com/chakra-ui/panda](https://github.com/chakra-ui/panda)
 
 shadcnのようにコンポーネントがパッケージ化されているわけではなく、ローカルでコンポーネントを展開します。
 
@@ -242,13 +240,13 @@ export const buttonStyles = tv({
 独自のテーマやコンポーネントを作りたい場合は、このライブラリを使ってスタイルを修正するのも良さそうです。
 リポジトリはこちらです。
 
-https://github.com/cschroeter/park-ui
+[https://github.com/cschroeter/park-ui](https://github.com/cschroeter/park-ui)
 
 # 最後に
 
 最近はv0というサイトでshadcn/uiとTailwindCSSのコードを日本語で生成できます。
 
-https://v0.dev/
+[https://v0.dev/](https://v0.dev/)
 
 また、TailwindCSSは大量にリポジトリがあり学習されているのかChatGPTの生成するコードの質が良くCopilotとの相性も良いです。
 

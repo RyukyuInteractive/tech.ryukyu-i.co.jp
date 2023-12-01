@@ -7,15 +7,13 @@ author: reiwa
 typora-root-url: ..
 ---
 
-# お問い合わせしてみる
-
 ChatGPTのようなLLMとSlackを用いて、お問い合わせのチャットBotを開発できます。
 
 従来のフローチャートを用いたチャットBotと違い、LLMを使用した場合は質問に対して適切な回答を自動で生成できます。
 
 OpenAIのPlaygroundで試すことができます。
 
-https://platform.openai.com/playground
+[https://platform.openai.com/playground](https://platform.openai.com/playground)
 
 ![img](/images/2023/2023-11-23-playground.png)
 
@@ -138,7 +136,7 @@ const embeddingResponse = await openai.embeddings.create({
 ベクトル化したデータはベクトル検索に対応したデータベースに書き込みます。
 PostgreSQLのpgvectorなどが使用できます。
 
-https://github.com/pgvector/pgvector/
+[https://github.com/pgvector/pgvector/](https://github.com/pgvector/pgvector/)
 
 ## supabaseを使用する
 
@@ -152,7 +150,7 @@ https://github.com/supabase/headless-vector-search/blob/main/supabase/migrations
 
 あとはこのActionsを追加すればリポジトリにあるdocsディレクトリのマークダウンのファイルたちをデータベースに書き込んでくれます。
 
-https://github.com/supabase/embeddings-generator
+[https://github.com/supabase/embeddings-generator](https://github.com/supabase/embeddings-generator)
 
 supabaseのクライアントを用いて簡単に検索できます。
 
