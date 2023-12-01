@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'ChatGPTでお問い合わせチャットBotを作るには'
-date: 2023-10-28 12:00:00 +0900
+date: 2023-11-28 12:00:00 +0900
 comments: false
 author: reiwa
 typora-root-url: ..
