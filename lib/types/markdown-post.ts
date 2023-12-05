@@ -9,4 +9,5 @@ export type MarkdownPost = {
   year: string
   month: string
   day: string
+  key: string
 }

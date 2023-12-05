@@ -29,7 +29,7 @@ const TagPage = async (props: Props) => {
       <h2 className="text-2xl font-bold">{`タグ「${props.params.tag}」に関連する記事`}</h2>
       <section className="space-y-4">
         {posts.map((post) => (
-          <article key={post.slug}>
+          <article key={post.key}>
             <Link href={`/${post.year}/${post.month}/${post.day}/${post.slug}`}>
               <PostCard
                 title={post.title}

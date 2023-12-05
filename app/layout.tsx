@@ -7,6 +7,7 @@ import { config } from "@/config"
 import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import { Noto_Sans_JP } from "next/font/google"
+import Script from "next/script"
 
 const notoSansJp = Noto_Sans_JP({
   weight: ["500", "700"],
@@ -23,6 +24,17 @@ type Props = {
 const RootLayout = (props: Props) => {
   return (
     <html lang={"ja"} suppressHydrationWarning>
+      <head>
+        <Script
+          strategy="lazyOnload"
+          src="https://www.googletagmanager.com/gtag/js?id=G-BN8E5K5EG4"
+        />
+        <Script strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());`}
+        </Script>
+      </head>
       <body
         className={cn(
           "min-h-screen font-sans antialiased w-full",

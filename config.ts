@@ -19,4 +19,5 @@ export const config = {
       "弊社では、毎週水曜日の昼時間に弁当を食べながら最近気になる技術だったり製品だったり試したことなどを共有しています。発表した内容で公表できる部分はどんどん公表していこうということでblogに投稿しています。",
   },
   siteURL: "https://tech.ryukyu-i.co.jp",
+  gtagId: "G-BN8E5K5EG4",
 }

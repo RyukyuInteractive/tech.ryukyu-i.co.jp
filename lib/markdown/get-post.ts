@@ -30,5 +30,6 @@ export const getPost = async (
     year: year,
     month: month,
     day: day,
+    key: `${year}-${month}-${day}-${slug}`,
   }
 }

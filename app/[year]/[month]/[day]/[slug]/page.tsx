@@ -170,7 +170,7 @@ const PostPage = async (props: Props) => {
         <section className="space-y-4">
           <h2 className="font-bold">{"関連する記事"}</h2>
           {relatedPosts.map((post) => (
-            <article key={post.slug}>
+            <article key={post.key}>
               <Link
                 href={`/${post.year}/${post.month}/${post.day}/${post.slug}`}
               >
