@@ -43,7 +43,7 @@ const HomePage = async () => {
 }
 
 export const metadata: Metadata = {
-  title: config.blogTitle,
+  title: config.siteTitle,
 }
 
 export default HomePage

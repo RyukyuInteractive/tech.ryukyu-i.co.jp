@@ -3,7 +3,6 @@ import { PostCard } from "@/app/_components/post-card"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { config } from "@/config"
 import { getPost } from "@/lib/markdown/get-post"
 import { getPostTags } from "@/lib/markdown/get-post-tags"
 import { getPosts } from "@/lib/markdown/get-posts"
@@ -198,7 +197,7 @@ export const generateMetadata = async (props: Props): Promise<Metadata> => {
     props.params.slug,
   )
   return {
-    title: `${post.title} - ${config.blogTitle}`,
+    title: post.title,
   }
 }
 

@@ -1,6 +1,5 @@
 import { PostCard } from "@/app/_components/post-card"
 import { Badge } from "@/components/ui/badge"
-import { config } from "@/config"
 import { getPostTags } from "@/lib/markdown/get-post-tags"
 import { getTagPosts } from "@/lib/markdown/get-tag-posts"
 import { Metadata } from "next"
@@ -48,7 +47,7 @@ const TagPage = async (props: Props) => {
 
 export const generateMetadata = async (props: Props): Promise<Metadata> => {
   return {
-    title: `${props.params.tag} - ${config.blogTitle}`,
+    title: props.params.tag,
   }
 }
 
