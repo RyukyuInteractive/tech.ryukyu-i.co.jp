@@ -26,7 +26,7 @@ const HomePage = async () => {
       <section className="space-y-4">
         {posts.map((post) => (
           <article key={post.slug}>
-            <Link href={`/posts/${post.slug}`}>
+            <Link href={`/${post.year}/${post.month}/${post.day}/${post.slug}`}>
               <PostCard
                 title={post.title}
                 date={post.date}

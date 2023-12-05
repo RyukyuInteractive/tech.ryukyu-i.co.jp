@@ -1,11 +1,13 @@
 import { getPost } from "@/lib/markdown/get-post"
-import { getPostSlugs } from "@/lib/markdown/get-post-slugs"
+import { getPostFileNames } from "@/lib/markdown/get-post-file-names"
 
 export const getPosts = async () => {
-  const slugs = await getPostSlugs()
+  const fileNames = await getPostFileNames()
 
-  const promises = slugs.map((slug) => {
-    return getPost(slug)
+  const promises = fileNames.map((fileName) => {
+    const [year, month, day, ...texts] = fileName.split("-")
+    const slug = texts.join("-")
+    return getPost(year, month, day, slug)
   })
 
   const posts = await Promise.all(promises)

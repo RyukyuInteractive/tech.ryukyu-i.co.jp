@@ -6,4 +6,7 @@ export type MarkdownPost = {
   author: string
   body: string
   tags: string[]
+  year: string
+  month: string
+  day: string
 }

@@ -16,16 +16,29 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlig
 
 type Props = {
   params: {
+    year: string
+    month: string
+    day: string
     slug: string
   }
 }
 
 const PostPage = async (props: Props) => {
-  const post = await getPost(props.params.slug)
+  const post = await getPost(
+    props.params.year,
+    props.params.month,
+    props.params.day,
+    props.params.slug,
+  )
 
   const tags = await getPostTags()
 
-  const relatedPosts = await getRelatedPosts(post.slug)
+  const relatedPosts = await getRelatedPosts(
+    props.params.year,
+    props.params.month,
+    props.params.day,
+    post.slug,
+  )
 
   return (
     <main className="max-w-screen-md mx-auto px-4 space-y-8">
@@ -158,7 +171,9 @@ const PostPage = async (props: Props) => {
           <h2 className="font-bold">{"関連する記事"}</h2>
           {relatedPosts.map((post) => (
             <article key={post.slug}>
-              <Link href={`/posts/${post.slug}`}>
+              <Link
+                href={`/${post.year}/${post.month}/${post.day}/${post.slug}`}
+              >
                 <PostCard
                   title={post.title}
                   date={post.date}
@@ -176,7 +191,12 @@ const PostPage = async (props: Props) => {
 }
 
 export const generateMetadata = async (props: Props): Promise<Metadata> => {
-  const post = await getPost(props.params.slug)
+  const post = await getPost(
+    props.params.year,
+    props.params.month,
+    props.params.day,
+    props.params.slug,
+  )
   return {
     title: `${post.title} - ${config.blogTitle}`,
   }
@@ -187,6 +207,9 @@ export const generateStaticParams = async () => {
   return posts.map((post) => {
     return {
       slug: post.slug,
+      year: post.year,
+      month: post.month,
+      day: post.day,
     }
   })
 }

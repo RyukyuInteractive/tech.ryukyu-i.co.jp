@@ -5,8 +5,13 @@ import matter from "gray-matter"
 
 const postsDirectory = join(process.cwd(), "_posts")
 
-export const getPost = async (slug: string): Promise<MarkdownPost> => {
-  const fullPath = join(postsDirectory, `${slug}.md`)
+export const getPost = async (
+  year: string,
+  month: string,
+  day: string,
+  slug: string,
+): Promise<MarkdownPost> => {
+  const fullPath = join(postsDirectory, `${year}-${month}-${day}-${slug}.md`)
 
   const fileText = await readFile(fullPath, "utf-8")
 
@@ -22,5 +27,8 @@ export const getPost = async (slug: string): Promise<MarkdownPost> => {
     author: data.author,
     body: content,
     tags: data.tags ?? [],
+    year: year,
+    month: month,
+    day: day,
   }
 }

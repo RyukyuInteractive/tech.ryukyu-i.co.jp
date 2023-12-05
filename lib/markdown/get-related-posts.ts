@@ -1,8 +1,13 @@
 import { getPost } from "@/lib/markdown/get-post"
 import { getPosts } from "@/lib/markdown/get-posts"
 
-export const getRelatedPosts = async (slug: string) => {
-  const targetPost = await getPost(slug)
+export const getRelatedPosts = async (
+  year: string,
+  month: string,
+  day: string,
+  slug: string,
+) => {
+  const targetPost = await getPost(year, month, day, slug)
 
   const posts = await getPosts()
 
