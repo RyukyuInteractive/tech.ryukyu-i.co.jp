@@ -5,6 +5,8 @@ date:   2017-11-22 16:50:00 +0900
 comments: false
 author: ameyamashiro
 typora-root-url: ..
+tags:
+  - blog
 ---
 
 こんにちはこんばんはおはようございます山城です。
@@ -15,7 +17,7 @@ GitHub のサーバー側へ証明書を入れ込むことはできないので 
 
 一般的にその場合は CDN を使うことが多いように思えます。
 Cloudflare, Fastly などの選択肢がありましたが、今回は CloudFront を使いました。
-理由としては AWS アカウントが既にあって且つネームサーバーの変更が不要という箇所 CloudFront になりました。  
+理由としては AWS アカウントが既にあって且つネームサーバーの変更が不要という箇所 CloudFront になりました。
 
 <br />
 
@@ -52,7 +54,7 @@ Origin Domain Name に origin.tech.ryukyu-i.co.jp を設定します。
 
 ![11B2BC2EDA1D30E5069C16BCAD37FBD2.png](/images/2017/11/11B2BC2EDA1D30E5069C16BCAD37FBD2.png)
 
-Viewer Protocol Policy を Redirect HTTP to HTTPS にするとユーザーから HTTP でアクセスされた際に HTTPS へ自動的にリダイレクトされるようになります。  
+Viewer Protocol Policy を Redirect HTTP to HTTPS にするとユーザーから HTTP でアクセスされた際に HTTPS へ自動的にリダイレクトされるようになります。
 Header の Forward 系は条件によってリダイレクトループを発生させたりしやすいので動的コンテンツを扱う場合は注意して設定しましょう。
 
 ## Distribution Settings
@@ -82,7 +84,7 @@ Status の In Progress が Deployed に変わるまで待ちます。
 
 ![6FA9912AFA12754DB5670E13906EC557.png](/images/2017/11/6FA9912AFA12754DB5670E13906EC557.png)
 
-In Progress が Deployed になれば CDN の設定は完了です。  
-https でのアクセスが正常に動作するか確認しましょう。  
+In Progress が Deployed になれば CDN の設定は完了です。
+https でのアクセスが正常に動作するか確認しましょう。
 
 [https://tech.ryukyu-i.co.jp](https://tech.ryukyu-i.co.jp)

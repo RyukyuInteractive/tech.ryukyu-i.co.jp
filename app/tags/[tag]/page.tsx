@@ -20,16 +20,16 @@ const TagPage = async (props: Props) => {
 
   return (
     <main className="max-w-screen-md mx-auto px-4 pt-8 space-y-8">
-      <div className="space-x-2">
+      <nav className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <Link key={tag} href={`/tags/${tag}`}>
-            <Badge className="hover:underline">{tag}</Badge>
+            <Badge className="block hover:underline">{tag}</Badge>
           </Link>
         ))}
-      </div>
+      </nav>
       <Separator />
-      <h2 className="text-2xl">{`タグ「${props.params.tag}」に関する記事`}</h2>
-      <div className="space-y-4">
+      <h2 className="text-2xl">{`タグ「${props.params.tag}」に関連する記事`}</h2>
+      <section className="space-y-4">
         {posts.map((post) => (
           <article key={post.slug}>
             <Link href={`/posts/${post.slug}`}>
@@ -43,7 +43,7 @@ const TagPage = async (props: Props) => {
             </Link>
           </article>
         ))}
-      </div>
+      </section>
     </main>
   )
 }

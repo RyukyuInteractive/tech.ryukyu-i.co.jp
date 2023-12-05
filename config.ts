@@ -14,4 +14,8 @@ export const config = {
     name: "InteractiveInc",
     bio: "Be the leading internet company by creative technologies",
   },
+  tagDescription: {
+    "tech-lunch":
+      "弊社では、毎週水曜日の昼時間に弁当を食べながら最近気になる技術だったり製品だったり試したことなどを共有しています。発表した内容で公表できる部分はどんどん公表していこうということでblogに投稿しています。",
+  },
 }

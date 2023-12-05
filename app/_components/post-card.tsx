@@ -32,7 +32,9 @@ export const PostCard = (props: Props) => {
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-2">
-        <p className="text-sm">{props.description}</p>
+        <p className="text-sm text-ellipsis overflow-hidden">
+          {props.description}
+        </p>
       </CardContent>
     </Card>
   )

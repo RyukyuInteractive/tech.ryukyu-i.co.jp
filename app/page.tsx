@@ -1,6 +1,5 @@
 import { PostCard } from "@/app/_components/post-card"
 import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
 import { config } from "@/config"
 import { getPostTags } from "@/lib/markdown/get-post-tags"
 import { getPosts } from "@/lib/markdown/get-posts"
@@ -14,16 +13,15 @@ const HomePage = async () => {
 
   return (
     <main className="max-w-screen-md mx-auto px-4 pt-8 space-y-8">
-      <div className="space-x-2">
+      <nav className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <Link key={tag} href={`/tags/${tag}`}>
-            <Badge className="hover:underline">{tag}</Badge>
+            <Badge className="block hover:underline">{tag}</Badge>
           </Link>
         ))}
-      </div>
-      <Separator />
+      </nav>
       <h2 className="text-2xl">{"What's New?"}</h2>
-      <div className="space-y-4">
+      <section className="space-y-4">
         {posts.map((post) => (
           <article key={post.slug}>
             <Link href={`/posts/${post.slug}`}>
@@ -37,7 +35,7 @@ const HomePage = async () => {
             </Link>
           </article>
         ))}
-      </div>
+      </section>
     </main>
   )
 }

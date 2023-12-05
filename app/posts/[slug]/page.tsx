@@ -1,8 +1,13 @@
 import { DateTime } from "@/app/_components/date-time"
+import { PostCard } from "@/app/_components/post-card"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
+import { Badge } from "@/components/ui/badge"
+import { Separator } from "@/components/ui/separator"
 import { config } from "@/config"
 import { getPost } from "@/lib/markdown/get-post"
+import { getPostTags } from "@/lib/markdown/get-post-tags"
 import { getPosts } from "@/lib/markdown/get-posts"
+import { getRelatedPosts } from "@/lib/markdown/get-related-posts"
 import { Metadata } from "next"
 import Link from "next/link"
 import Markdown from "react-markdown"
@@ -18,8 +23,12 @@ type Props = {
 const PostPage = async (props: Props) => {
   const post = await getPost(props.params.slug)
 
+  const tags = await getPostTags()
+
+  const relatedPosts = await getRelatedPosts(post.slug)
+
   return (
-    <main className="max-w-screen-md mx-auto px-4">
+    <main className="max-w-screen-md mx-auto px-4 space-y-8">
       <article className="space-y-4 pt-8">
         <Link
           className="block w-fit hover:underline"
@@ -37,6 +46,15 @@ const PostPage = async (props: Props) => {
         </Link>
         <h1 className="font-bold text-3xl">{post.title}</h1>
         <DateTime text={post.date} />
+        {0 < post.tags.length && (
+          <section className="flex flex-wrap gap-2">
+            {post.tags.map((tag) => (
+              <Link key={tag} href={`/tags/${tag}`}>
+                <Badge className="block hover:underline">{tag}</Badge>
+              </Link>
+            ))}
+          </section>
+        )}
         <Markdown
           className={"leading-relaxed flex flex-col"}
           components={{
@@ -64,7 +82,13 @@ const PostPage = async (props: Props) => {
             },
             a(props) {
               const { node, ...rest } = props
-              return <a className="text-blue-500 underline" {...rest} />
+              return (
+                <a
+                  className="text-blue-500 underline"
+                  target="_blank"
+                  {...rest}
+                />
+              )
             },
             ul(props) {
               const { node, ...rest } = props
@@ -117,6 +141,36 @@ const PostPage = async (props: Props) => {
           {post.body}
         </Markdown>
       </article>
+      <Separator />
+      <section className="space-y-4">
+        <h2 className="font-bold">{"その他のタグ"}</h2>
+        <nav className="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <Link key={tag} href={`/tags/${tag}`}>
+              <Badge className="block hover:underline">{tag}</Badge>
+            </Link>
+          ))}
+        </nav>
+      </section>
+      {relatedPosts.length > 0 && <Separator />}
+      {relatedPosts.length > 0 && (
+        <section className="space-y-4">
+          <h2 className="font-bold">{"関連する記事"}</h2>
+          {relatedPosts.map((post) => (
+            <article key={post.slug}>
+              <Link href={`/posts/${post.slug}`}>
+                <PostCard
+                  title={post.title}
+                  date={post.date}
+                  description={post.description}
+                  author={post.author}
+                  slug={post.slug}
+                />
+              </Link>
+            </article>
+          ))}
+        </section>
+      )}
     </main>
   )
 }

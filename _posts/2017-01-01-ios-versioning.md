@@ -4,6 +4,8 @@ title:  "正しく理解する iOS アプリのバージョニング"
 date:   2017-01-01 00:00:00 +0900
 comments: true
 author: tdkn
+tags:
+  - ios
 ---
 
 ## Bundle Version は2つある

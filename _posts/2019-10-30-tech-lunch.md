@@ -5,29 +5,31 @@ date:   2019-10-30 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
 
 ### JAWS-UG沖縄 Amazon Forecast＆Personalizeハンズオン 2019年10月
 ・・に行ってきた。
-  
-時系列データから将来を予測するAmazon Forecastのハンズオンはここの資料を見てもくもく。  
-[harunobukameda/Amazon\-Forecast](https://github.com/harunobukameda/Amazon-Forecast)  
-  
-レコメンドを提供するAmazon Personalizeのハンズオンはここの資料を見てもくもく。  
-[harunobukameda/Amazon\-Personalize\-Handson](https://github.com/harunobukameda/Amazon-Personalize-Handson)  
-  
-どちらもマネジメントコンソールをほぼポチポチするだけでできるので、試しに触ってみたいという人は↑をやったらいいと思う(^^  
-ただ、後片付けしないとお金がかかるので要注意(^^;  
-  
-  
+
+時系列データから将来を予測するAmazon Forecastのハンズオンはここの資料を見てもくもく。
+[harunobukameda/Amazon\-Forecast](https://github.com/harunobukameda/Amazon-Forecast)
+
+レコメンドを提供するAmazon Personalizeのハンズオンはここの資料を見てもくもく。
+[harunobukameda/Amazon\-Personalize\-Handson](https://github.com/harunobukameda/Amazon-Personalize-Handson)
+
+どちらもマネジメントコンソールをほぼポチポチするだけでできるので、試しに触ってみたいという人は↑をやったらいいと思う(^^
+ただ、後片付けしないとお金がかかるので要注意(^^;
+
+
 ### AWS Backup
-懇親会の居酒屋LT(?)で話したもの。  
-社内用のシステム作ってと言われて、一応バックアップやリストアも考慮しないといけないなーと思って使っているのがコレ。  
-[AWS Backup \| クラウドバックアップの集中管理](https://aws.amazon.com/jp/backup/)   
-EBSやEFS，RDSやDynamoDBなどのバックアップを画面ポチポチで設定できるもの。  
-取得頻度や保存期間も設定できるので楽ちん。  
+懇親会の居酒屋LT(?)で話したもの。
+社内用のシステム作ってと言われて、一応バックアップやリストアも考慮しないといけないなーと思って使っているのがコレ。
+[AWS Backup \| クラウドバックアップの集中管理](https://aws.amazon.com/jp/backup/)
+EBSやEFS，RDSやDynamoDBなどのバックアップを画面ポチポチで設定できるもの。
+取得頻度や保存期間も設定できるので楽ちん。
 雑に管理(?)したい人にはおすすめです(^^
 
 ----
@@ -36,7 +38,7 @@ EBSやEFS，RDSやDynamoDBなどのバックアップを画面ポチポチで設
 
 ### [Okinawa Frontend meetup #5](https://okinawa-frontend.doorkeeper.jp/events/98291)でもくもくしたやつでhandson
 
-先週土曜日にOkinawa Frontend meetup #5に参加して、もくもくreactしてきたので、その成果物(https://github.com/atomita/okinawa-frontend-meetup5)を使ってhandsonしてみました  
+先週土曜日にOkinawa Frontend meetup #5に参加して、もくもくreactしてきたので、その成果物(https://github.com/atomita/okinawa-frontend-meetup5)を使ってhandsonしてみました
 
 step01 branchをcheckoutして、そこからcommitを辿っていく感じで進行
 

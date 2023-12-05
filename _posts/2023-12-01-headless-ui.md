@@ -20,8 +20,8 @@ React には色々な UI ライブラリがありますが、TailwindCSS を使�
 
 更にそれらを用いたこれらのライブラリが良いと感じました。
 
-- Park UI - [https://park-ui.com/](https://park-ui.com/)
-- shadcn/ui - [https://ui.shadcn.com/](https://ui.shadcn.com/)
+- Park UI (Ark UI) - [https://park-ui.com/](https://park-ui.com/)
+- shadcn/ui (Radix UI) - [https://ui.shadcn.com/](https://ui.shadcn.com/)
 
 ## HeadlessUI とは
 

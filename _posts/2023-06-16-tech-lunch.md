@@ -5,6 +5,8 @@ date:   2023-06-16 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@MotoiOkuhira](https://github.com/MotoiOkuhira)
@@ -17,8 +19,8 @@ ChatGPTに頼りまくってChatGPT APIを使ったチャットbotを3時間で�
 ## [@taichiyam](https://github.com/taichiyam)
 ### オススメ本紹介『入門 起業の科学』
 
-スタートアップウィークエンドの予習にもオススメ  
-『入門 起業の科学』を紹介しました。  
+スタートアップウィークエンドの予習にもオススメ
+『入門 起業の科学』を紹介しました。
 
 [オススメ本『入門 起業の科学』](https://www.docswell.com/s/8826733942/ZNRJDW-2023-06-16-tech-lunch)
 

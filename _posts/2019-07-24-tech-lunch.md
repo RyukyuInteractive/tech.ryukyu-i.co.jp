@@ -5,6 +5,8 @@ date:   2019-07-24 13:00:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 # Tech Lunch 2019-07-24

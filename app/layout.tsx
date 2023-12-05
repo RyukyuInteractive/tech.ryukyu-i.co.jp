@@ -3,7 +3,6 @@ import "./globals.css"
 import { RootFooter } from "@/app/_components/root-footer"
 import { RootHeader } from "@/app/_components/root-header"
 import { RootProvider } from "@/app/_components/root-provider"
-import { Separator } from "@/components/ui/separator"
 import { config } from "@/config"
 import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
@@ -32,7 +31,6 @@ const RootLayout = (props: Props) => {
       >
         <RootProvider>
           <RootHeader />
-          <Separator />
           {props.children}
           <RootFooter />
         </RootProvider>

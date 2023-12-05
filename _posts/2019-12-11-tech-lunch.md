@@ -5,22 +5,24 @@ date:   2019-12-11 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
 
 ### GCPと紐付けたFirebaseを削除するとGCP側も消えるのか？
-[本番環境でやらかしちゃった人 Advent Calendar 2019 \- Qiita](https://qiita.com/advent-calendar/2019/yarakashi-production) にあった [GCP Projectを消しちゃった話 \- 839の日記](https://839.hateblo.jp/entry/2019/12/07/000000) を読んだ。  
-  
-で、追記のところの  
+[本番環境でやらかしちゃった人 Advent Calendar 2019 \- Qiita](https://qiita.com/advent-calendar/2019/yarakashi-production) にあった [GCP Projectを消しちゃった話 \- 839の日記](https://839.hateblo.jp/entry/2019/12/07/000000) を読んだ。
 
-> 既存のGCP ProjectにFirebaseを追加し、その際にFirebaseのリージョンをミスったのでFirebase側を消そうとした形です。  
+で、追記のところの
 
-を試しみたくなったのでみんなの前で実験した。  
-結果はもちろんGCPのProjectも消えた(^^;  
-  
-既存のGCP Projectがあって、Firebaseをお試しで〜 & 使わないから削除〜 ってのは普通にありそうなので、実験したことを忘れないようにしたい。  
-ま、FirebaseでProject作る時には注意書きをしっかり読むってのを徹底する方がいいかもね(^^;;   
+> 既存のGCP ProjectにFirebaseを追加し、その際にFirebaseのリージョンをミスったのでFirebase側を消そうとした形です。
+
+を試しみたくなったのでみんなの前で実験した。
+結果はもちろんGCPのProjectも消えた(^^;
+
+既存のGCP Projectがあって、Firebaseをお試しで〜 & 使わないから削除〜 ってのは普通にありそうなので、実験したことを忘れないようにしたい。
+ま、FirebaseでProject作る時には注意書きをしっかり読むってのを徹底する方がいいかもね(^^;;
 
 ![Screenshot](/images/2019/12/screenshot_2019-12-11_11_56_01.png)
 

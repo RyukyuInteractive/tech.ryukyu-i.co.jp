@@ -5,6 +5,8 @@ date:   2019-10-02 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
@@ -22,15 +24,15 @@ typora-root-url: ..
 
 
 ### CloudFront + WAF + S3 のSPAでIP制限する
-S3に置いたSPAなので、403や404などのエラー周りもindex.htmlにリダイレクトさせる必要がある。  
-そのためにCFのError Pagesでその設定を入れた。    
-   
+S3に置いたSPAなので、403や404などのエラー周りもindex.htmlにリダイレクトさせる必要がある。
+そのためにCFのError Pagesでその設定を入れた。
+
 一方、WAFのIP制限に引っかかると403を返す。
 ただCFのError Pagesを上記のようにするとIP制限に引っかかってもindex.htmlが表示される・・
-  
-[S3 CloudFront Route 53 でReactで作ったSPAを配信する \- Qiita](https://qiita.com/keitakn/items/35ae8cc56f5c0a4766b4) のコメントにある通り、  
-CFのError Pageで403はindex.htmlにリダイレクトさせず、  
-S3のバケット自体をpublicにすることで、SPAも正常に動作しつつIP制限がかかるようにはなった。  
+
+[S3 CloudFront Route 53 でReactで作ったSPAを配信する \- Qiita](https://qiita.com/keitakn/items/35ae8cc56f5c0a4766b4) のコメントにある通り、
+CFのError Pageで403はindex.htmlにリダイレクトさせず、
+S3のバケット自体をpublicにすることで、SPAも正常に動作しつつIP制限がかかるようにはなった。
 ただ、S3のオブジェクト URLではアクセスできるのでどうしようかなと・・orz
 
 ----

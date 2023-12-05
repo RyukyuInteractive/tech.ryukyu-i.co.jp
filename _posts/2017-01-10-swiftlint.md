@@ -5,6 +5,8 @@ date:   2017-01-10 00:00:00 +0900
 comments: true
 author: tdkn
 typora-root-url: ..
+tags:
+  - ios
 ---
 
 こんにちは〜 @tdkn です！
