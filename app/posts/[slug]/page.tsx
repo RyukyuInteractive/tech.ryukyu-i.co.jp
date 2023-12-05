@@ -56,7 +56,7 @@ const PostPage = async (props: Props) => {
           </section>
         )}
         <Markdown
-          className={"leading-relaxed flex flex-col"}
+          className={"leading-relaxed"}
           components={{
             h1(props) {
               const { node, ...rest } = props
