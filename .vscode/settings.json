@@ -1,9 +1,7 @@
 {
-  "cSpell.words": ["clsx", "openai", "shadcn", "supabase"],
+  "cSpell.words": ["clsx"],
   "cSpell.ignorePaths": [".vscode"],
-  "deno.enable": false,
   "editor.formatOnSave": true,
-  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?、。　",
   "eslint.enable": false,
   "files.associations": {
     "*.xml": "html",
