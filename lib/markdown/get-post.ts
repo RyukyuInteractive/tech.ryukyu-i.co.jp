@@ -21,5 +21,6 @@ export const getPost = async (slug: string): Promise<MarkdownPost> => {
     date: data.date,
     author: data.author,
     body: content,
+    tags: data.tags ?? [],
   }
 }

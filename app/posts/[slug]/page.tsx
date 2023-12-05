@@ -1,8 +1,8 @@
 import { DateTime } from "@/app/_components/date-time"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import { config } from "@/config"
-import { getPost } from "@/lib/get-post"
-import { getAllPosts } from "@/lib/get-posts"
+import { getPost } from "@/lib/markdown/get-post"
+import { getPosts } from "@/lib/markdown/get-posts"
 import { Metadata } from "next"
 import Link from "next/link"
 import Markdown from "react-markdown"
@@ -129,7 +129,7 @@ export const generateMetadata = async (props: Props): Promise<Metadata> => {
 }
 
 export const generateStaticParams = async () => {
-  const posts = await getAllPosts()
+  const posts = await getPosts()
   return posts.map((post) => {
     return {
       slug: post.slug,

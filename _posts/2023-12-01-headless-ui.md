@@ -5,6 +5,9 @@ date: 2023-12-01 12:00:00 +0900
 comments: false
 author: reiwa
 typora-root-url: ..
+tags:
+  - react
+  - tailwind
 ---
 
 React には色々な UI ライブラリがありますが、TailwindCSS を使用できる HeadlessUI なライブラリが使いやすいと感じています。

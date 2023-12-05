@@ -3,12 +3,18 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { config } from "@/config"
 import { getPostTags } from "@/lib/markdown/get-post-tags"
-import { getPosts } from "@/lib/markdown/get-posts"
+import { getTagPosts } from "@/lib/markdown/get-tag-posts"
 import { Metadata } from "next"
 import Link from "next/link"
 
-const HomePage = async () => {
-  const posts = await getPosts()
+type Props = {
+  params: {
+    tag: string
+  }
+}
+
+const TagPage = async (props: Props) => {
+  const posts = await getTagPosts(props.params.tag)
 
   const tags = await getPostTags()
 
@@ -22,7 +28,7 @@ const HomePage = async () => {
         ))}
       </div>
       <Separator />
-      <h2 className="text-2xl">{"What's New?"}</h2>
+      <h2 className="text-2xl">{`タグ「${props.params.tag}」に関する記事`}</h2>
       <div className="space-y-4">
         {posts.map((post) => (
           <article key={post.slug}>
@@ -42,8 +48,17 @@ const HomePage = async () => {
   )
 }
 
-export const metadata: Metadata = {
-  title: config.blogTitle,
+export const generateMetadata = async (props: Props): Promise<Metadata> => {
+  return {
+    title: `${props.params.tag} - ${config.blogTitle}`,
+  }
 }
 
-export default HomePage
+export const generateStaticParams = async () => {
+  const tags = await getPostTags()
+  return tags.map((tag) => {
+    return { tag: tag }
+  })
+}
+
+export default TagPage
