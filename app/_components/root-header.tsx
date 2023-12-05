@@ -1,19 +1,22 @@
-import { BrandImageIcon } from "@/app/_components/brand-image-icon"
+import { BrandLogo } from "@/app/_components/brand-logo"
 import { ThemeDropdownMenu } from "@/app/_components/theme-dropdown-menu"
 import { Card } from "@/components/ui/card"
-import { config } from "@/config"
 import Link from "next/link"
 
 export const RootHeader = () => {
   return (
     <header className="sticky top-0 z-40">
-      <Card className="border-t-0 border-x-0 rounded-none">
-        <div className="max-w-screen-md mx-auto px-4 py-4 flex space-x-4 justify-between">
+      <Card className="max-w-screen-md mx-auto border-none rounded-none shadow-none">
+        <div className="px-4 py-5 flex space-x-4 justify-between">
           <div className="flex space-x-4 items-center">
-            <BrandImageIcon />
-            <h1 className="text-xl font-bold">
-              <Link href="/">{config.blogTitle}</Link>
-            </h1>
+            <Link href="/">
+              <h1 className="text-xl font-bold flex gap-x-4 items-baseline">
+                <div className="dark:fill-white">
+                  <BrandLogo />
+                </div>
+                <span>{"Tech Blog"}</span>
+              </h1>
+            </Link>
           </div>
           <ThemeDropdownMenu />
         </div>

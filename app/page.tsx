@@ -20,7 +20,9 @@ const HomePage = async () => {
           </Link>
         ))}
       </nav>
-      <h2 className="text-2xl">{"What's New?"}</h2>
+      <div className="flex gap-x-4">
+        <h2 className="text-2xl font-bold">{"What's New?"}</h2>
+      </div>
       <section className="space-y-4">
         {posts.map((post) => (
           <article key={post.slug}>

@@ -1,12 +1,11 @@
 /**
  * ブランドのアイコン
- * ボタンの高さ（40px）に合わせています。
  * @returns
  */
-export const BrandImageIcon = () => {
+export const BrandIcon = () => {
   return (
     <div className="py-1">
-      <div className="bg-white h-8 w-8 rounded overflow-hidden">
+      <div className="bg-white h-8 w-8 overflow-hidden">
         <img
           alt="Home"
           src={
