@@ -5,6 +5,8 @@ date:   2017-04-14 00:00:00 +0900
 comments: true
 author: tdkn
 typora-root-url: ..
+tags:
+  - docker
 ---
 
 ## この記事を読むと以下のような効果が得られます

@@ -5,6 +5,8 @@ date:   2019-12-18 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 
@@ -58,7 +60,7 @@ TypeScript ＋ Vue.js で作られていまして、Googleの検索結果ペー�
 
 15分は案外短くて、Laravel + GraphQLを始めるDemoをちゃんとできなかったのは残念でした
 
-イベントページでスライド公開okってしておいたけど、まだ公開されてないっぽい？ので、自分でspeakerdeckにuploadしちゃいます  
+イベントページでスライド公開okってしておいたけど、まだ公開されてないっぽい？ので、自分でspeakerdeckにuploadしちゃいます
 [Webシステム開発事例 と GraphQL Server with Laravel - Speaker Deck](https://speakerdeck.com/atomita/websisutemukai-fa-shi-li-to-graphql-server-with-laravel)
 
 

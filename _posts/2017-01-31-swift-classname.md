@@ -5,6 +5,8 @@ date:   2017-01-31 00:00:00 +0900
 comments: true
 author: tdkn
 typora-root-url: ..
+tags:
+  - ios
 ---
 
 ## 前提

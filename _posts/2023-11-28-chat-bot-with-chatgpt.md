@@ -5,6 +5,8 @@ date: 2023-11-28 12:00:00 +0900
 comments: false
 author: reiwa
 typora-root-url: ..
+tags:
+  - llm
 ---
 
 ChatGPTのようなLLMとSlackを用いて、お問い合わせのチャットBotを開発できます。

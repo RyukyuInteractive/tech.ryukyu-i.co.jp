@@ -3,8 +3,10 @@ layout: post
 title:  'Material-UI - Style'
 date:   2017-05-11 00:00:00 +0900
 comments: false
-author: uufish
+author: reiwa
 typora-root-url: ..
+tags:
+  - react
 ---
 
 # [MuiThemeProvider](https://github.com/callemall/material-ui/blob/next/src/styles/MuiThemeProvider.js)
@@ -74,7 +76,7 @@ class MuiThemeProvider extends Component {
     styleManager: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
   }
-  
+
   getChildContext () {
     const { theme, styleManager } = this
     return {

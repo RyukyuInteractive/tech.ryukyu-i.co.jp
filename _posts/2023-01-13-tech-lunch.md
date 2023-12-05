@@ -5,6 +5,8 @@ date:   2023-01-13 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 
@@ -50,17 +52,17 @@ typora-root-url: ..
 ## [@naotty](https://github.com/naotty)
 
 ### useMemoを勉強中
-useMemoをほぼ使ってこなかったので勉強している。  
-[React hooksを基礎から理解する \(useMemo編\) \- Qiita](https://qiita.com/seira/items/42576765aecc9fa6b2f8) のサンプルを動かすもレスポンスの違いがわかりにくかった。  
-console.logでログを吐くようにしたらと指摘をもらったのでそれで改めて確認する。  
-案件で使えそうなとこに入れていき。  
+useMemoをほぼ使ってこなかったので勉強している。
+[React hooksを基礎から理解する \(useMemo編\) \- Qiita](https://qiita.com/seira/items/42576765aecc9fa6b2f8) のサンプルを動かすもレスポンスの違いがわかりにくかった。
+console.logでログを吐くようにしたらと指摘をもらったのでそれで改めて確認する。
+案件で使えそうなとこに入れていき。
 
 
 ### Chromeのタブを復元したい
 Chromeの「設定 > 起動時 > 前回開いていたページを開く」で復元できる。
-ただコレ、最後に開いていたウィンドウにのみ適用されるので、メインのウィンドウより後に作業用の別ウィンドウを閉じるとメインのが綺麗サッパリ消えて悲しいことになる。  
-↑のuseMemo時にブラウザが固まったのでChromeごと閉じたら別ウィンドウがあって・・orz だったのでみんなに共有した。  
-ただ、Macだと「command + shift + t」で復元できると教えてもらったので、次回からはそれでの復元も試そうと思う。  
+ただコレ、最後に開いていたウィンドウにのみ適用されるので、メインのウィンドウより後に作業用の別ウィンドウを閉じるとメインのが綺麗サッパリ消えて悲しいことになる。
+↑のuseMemo時にブラウザが固まったのでChromeごと閉じたら別ウィンドウがあって・・orz だったのでみんなに共有した。
+ただ、Macだと「command + shift + t」で復元できると教えてもらったので、次回からはそれでの復元も試そうと思う。
 
 [Chrome のキーボード ショートカット \- パソコン \- Google Chrome ヘルプ](https://support.google.com/chrome/answer/157179?hl=ja&co=GENIE.Platform%3DDesktop#zippy=%2C%E3%82%BF%E3%83%96%E3%81%A8%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%89%E3%82%A6%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88)
 

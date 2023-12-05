@@ -4,6 +4,8 @@ title:  "iOSアプリ開発で役に立つ資料まとめ"
 date:   2016-12-28 00:00:00 +0900
 comments: true
 author: tdkn
+tags:
+  - ios
 ---
 
 こんにちは。テクノロジーチームの @tdkn (てどこん) です。

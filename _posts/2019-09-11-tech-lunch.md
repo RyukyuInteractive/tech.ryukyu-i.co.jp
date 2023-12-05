@@ -5,6 +5,8 @@ date:   2019-09-11 13:00:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
@@ -12,15 +14,15 @@ typora-root-url: ..
 ### 気になった記事紹介
 
 - [バズるためにジョイマンARを作ろうとしたら権利周りとかめちゃくちゃ苦労した話 \- Qiita](https://qiita.com/fushikky/items/127f7ab6c12d9b9140c9)
-    - 権利周りをちゃんとクリアして作るってのはホントすごい。  
-    - AR自体もすごく良く出来ていて、「こういうのを作りたいなー」と正直に思った。  
+    - 権利周りをちゃんとクリアして作るってのはホントすごい。
+    - AR自体もすごく良く出来ていて、「こういうのを作りたいなー」と正直に思った。
 - [私が（iOS エンジニアの）採用でコードチェックする時何を見ているのか \- Qiita](https://qiita.com/lovee/items/d76c68341ec3e7beb611)
-    - Web開発でのレビューでも適用できる点が多々あるので、うちのエンジニアはぜひ読んでほしい。  
+    - Web開発でのレビューでも適用できる点が多々あるので、うちのエンジニアはぜひ読んでほしい。
 - [TDDワイワイ会でテスト駆動開発に再挑戦しました \- りんごとバナナとエンジニア](https://udomomo.hatenablog.com/entry/2019/09/08/204148)
     - TDDをチームに根付かせるために、ぜひ社内でやりたい。というかやる。
 - [Google エンジニアリング・プラクティス ドキュメント \| eng\-practices](https://shuuji3.github.io/eng-practices/)
     - 改めて読みたい。
- 
+
 
 ----
 

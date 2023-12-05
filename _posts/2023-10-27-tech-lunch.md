@@ -5,17 +5,19 @@ date:   2023-10-27 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
 ### 社内アプリをhtmxで作り替えたい
-ハッカーズチャンプルーで発表されていた [htmx is not a typo \- Speaker Deck](https://speakerdeck.com/kimihito_/htmx-is-not-a-typo) の12ページの図に感銘を受けて、社内アプリをhtmxで作り替えてみようとしている。  
-公式のドキュメントやexampleが充実しているのと、[</> htmx ~ hx\-indicator Attribute](https://htmx.org/attributes/hx-indicator/) のように実際に使うときに必要なものが準備されているのはとても楽。  
+ハッカーズチャンプルーで発表されていた [htmx is not a typo \- Speaker Deck](https://speakerdeck.com/kimihito_/htmx-is-not-a-typo) の12ページの図に感銘を受けて、社内アプリをhtmxで作り替えてみようとしている。
+公式のドキュメントやexampleが充実しているのと、[</> htmx ~ hx\-indicator Attribute](https://htmx.org/attributes/hx-indicator/) のように実際に使うときに必要なものが準備されているのはとても楽。
 で、[</> htmx ~ hx\-push\-url Attribute](https://htmx.org/attributes/hx-push-url/) を使う + Laravelからhtmlを返す際、ルーティングを `routes/api.php` に書くと、リロード時に `api/〜` ってURLになるので、prefixをイジるかhtmxから呼ばれた時のheaderを見てリダイレクトするなどの処理が必要そう。
 
 ## Try htmx[@atomita](https://github.com/atomita)
 
-先にhtmxの紹介されてしまったところでしたが、GitHub Pagesでhtmxを試せるものを作成中なので、それを使ってbuttonのデモを少しだけ  
+先にhtmxの紹介されてしまったところでしたが、GitHub Pagesでhtmxを試せるものを作成中なので、それを使ってbuttonのデモを少しだけ
 [https://atomita.github.io/try-htmx/](https://atomita.github.io/try-htmx/)
 
 ## TiDB紹介[@atomita](https://github.com/atomita)

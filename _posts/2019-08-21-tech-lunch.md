@@ -5,6 +5,8 @@ date:   2019-08-21 13:00:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
@@ -17,10 +19,10 @@ typora-root-url: ..
 - [脱PHP初心者！インターフェイスを理解しよう \- Qiita](https://qiita.com/KNJ/items/210b0b119d45927eca1e)
     - イラストがあるとわかりやすい
     - 特にGitの方はゆるい感じがあってとても良い
-  
+
 ### BelongsToManyでリレーションしている中間テーブルの `created_at` を取得したかった
-Laravel 5.8 + Lighthouse 4.1  
-いろいろ試して、asメソッドで別名をつけると取得できた。  
+Laravel 5.8 + Lighthouse 4.1
+いろいろ試して、asメソッドで別名をつけると取得できた。
 
 ```php
 class Post extends Model
@@ -55,14 +57,14 @@ query {
         id
         post_tag {
           created_at
-        }  
+        }
       }
     }
   }
 }
 ```
 
-ただ、もっとシンプルにhasManyから取得できるようにしたので使わないことになったけど、  
+ただ、もっとシンプルにhasManyから取得できるようにしたので使わないことになったけど、
 やり方が分かったってことでいいかな(^^;
 
 
@@ -123,7 +125,7 @@ callback refs[^3refs]を使ったほうが良いんじゃ...
 
 便利そ～
 
-[Lighthouse-php](https://lighthouse-php.com/)も対応[^lighthouse-php-defer]しているようなので、laravelなprojectでも！  
+[Lighthouse-php](https://lighthouse-php.com/)も対応[^lighthouse-php-defer]しているようなので、laravelなprojectでも！
 
 [^lighthouse-php-defer]: [Deferred Fields \| Lighthouse](https://lighthouse-php.com/4.1/performance/deferred.html)
 

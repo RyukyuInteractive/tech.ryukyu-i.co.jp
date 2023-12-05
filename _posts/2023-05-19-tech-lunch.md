@@ -5,6 +5,8 @@ date:   2023-05-19 13:30:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## ChatGPTを使ってこんなんやりたいんや！[@MotoiOkuhira](https://github.com/MotoiOkuhira)
@@ -42,7 +44,7 @@ $this->instance(
              ->once();
     })
 );
-    
+
 // FooService->bar()が1度呼ばれる処理
 ```
 
@@ -57,7 +59,7 @@ $mock->shouldReceive('bar')
      ->andReturn('barbaz');
 ```
 
-この例だとbar methodの第1引数に`'bar'`が1度渡されるtestになります  
+この例だとbar methodの第1引数に`'bar'`が1度渡されるtestになります
 その際、bar methodは`'barbaz'`を返します
 
 特定の引数がscalarではない場合には、Mockery::on & 無名関数で判定することが可能です
@@ -67,7 +69,7 @@ $mock->shouldReceive('bar')
      ->with(Mockery::on(fn ($v) => $v instanceof Model));
 ```
 
-この例だとbar methodの第1引数に`Model`が渡されるtestになります  
+この例だとbar methodの第1引数に`Model`が渡されるtestになります
 
 引数が複数の場合には、withに複数引数を与えるか、withArgs methodを利用します
 
@@ -86,7 +88,7 @@ $mock->shouldReceive('bar')
      );
 ```
 
-この例だとbar methodの第1引数に`Model`、第2引数に配列が渡されるtestになります  
+この例だとbar methodの第1引数に`Model`、第2引数に配列が渡されるtestになります
 
 Facadeを利用している場合にはFacade::shouldReceiveなどが実装されているので`$this->instance()`を使わずにtestが記述できます
 
@@ -108,8 +110,8 @@ Myoutdeskllc\LaravelAnalyticsV4\LaravelAnalyticsV4をmock化してAPI呼び出�
 
 ## actでSetup PHPを使う時はイメージを変える[@naotty](https://github.com/naotty)
 
-LaravelのテストをGitHub Actionsで回すようにしたかったので、 [`nektos/act`](https://github.com/nektos/act) で一通り動いてからpushしようと。PHPは今後のことも考えて [shivammathur/setup\-php: GitHub action to set up PHP with extensions, php\.ini configuration, coverage drivers, and various tools\.](https://github.com/shivammathur/setup-php) を使うことにした。  
-・・が、何も考えずにactを実行すると「| ==> Setup PHP」から進まないorz  
+LaravelのテストをGitHub Actionsで回すようにしたかったので、 [`nektos/act`](https://github.com/nektos/act) で一通り動いてからpushしようと。PHPは今後のことも考えて [shivammathur/setup\-php: GitHub action to set up PHP with extensions, php\.ini configuration, coverage drivers, and various tools\.](https://github.com/shivammathur/setup-php) を使うことにした。
+・・が、何も考えずにactを実行すると「| ==> Setup PHP」から進まないorz
 actで使うイメージを↓のように変更したら通るようになった。
 
 ```shell
@@ -117,10 +119,10 @@ $ act -P ubuntu-latest=shivammathur/node:2204
 ```
 
 ##  actではサービスコンテナが使えない[@naotty](https://github.com/naotty)
-↑の続き。  
-workflowファイルではMySQLをサービスコンテナとして指定しているが、actではそれが使えないとのこと。  
-ref. [nektos/act: Run your GitHub Actions locally 🚀](https://github.com/nektos/act#known-issues)  
-  
+↑の続き。
+workflowファイルではMySQLをサービスコンテナとして指定しているが、actではそれが使えないとのこと。
+ref. [nektos/act: Run your GitHub Actions locally 🚀](https://github.com/nektos/act#known-issues)
+
 なので、MySQLはlocalの開発環境を見るようにした。
 
 

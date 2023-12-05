@@ -5,6 +5,8 @@ date:   2019-09-18 13:00:00 +0900
 comments: true
 author: atomita
 typora-root-url: ..
+tags:
+  - tech-lunch
 ---
 
 ## [@naotty](https://github.com/naotty)
@@ -32,7 +34,7 @@ typora-root-url: ..
 
 ### [MySQL date attributes can not be read from paginated HasMany relations · Issue #776 · nuwave/lighthouse](https://github.com/nuwave/lighthouse/issues/776)
 
-状況をざっくばらんに話しました  
+状況をざっくばらんに話しました
 ググっても似たような話が見つからないんですねよねぇ... 私の手には余る問題かな(^^;
 
 ### 他
