@@ -10,8 +10,7 @@ import { getRelatedPosts } from "@/lib/markdown/get-related-posts"
 import { Metadata } from "next"
 import Link from "next/link"
 import Markdown from "react-markdown"
-import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism"
-import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlight"
+import { HilightText } from "@/app/_components/highlight-text"
 
 type Props = {
   params: {
@@ -138,15 +137,7 @@ const PostPage = async (props: Props) => {
                 return null
               }
               const language = codeClassName.replace("language-", "")
-              return (
-                <SyntaxHighlighter
-                  className="my-2 shadow"
-                  language={language}
-                  style={dracula}
-                >
-                  {textNode.value}
-                </SyntaxHighlighter>
-              )
+              return <HilightText language={language} textNode={textNode} />
             },
           }}
         >
