@@ -1,3 +1,4 @@
+import { CodeBlock } from "@/app/_components/code-block"
 import { DateTime } from "@/app/_components/date-time"
 import { PostCard } from "@/app/_components/post-card"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
@@ -10,7 +11,6 @@ import { getRelatedPosts } from "@/lib/markdown/get-related-posts"
 import { Metadata } from "next"
 import Link from "next/link"
 import Markdown from "react-markdown"
-import { HilightText } from "@/app/_components/highlight-text"
 
 type Props = {
   params: {
@@ -137,7 +137,7 @@ const PostPage = async (props: Props) => {
                 return null
               }
               const language = codeClassName.replace("language-", "")
-              return <HilightText language={language} textNode={textNode} />
+              return <CodeBlock language={language}>{textNode.value}</CodeBlock>
             },
           }}
         >
