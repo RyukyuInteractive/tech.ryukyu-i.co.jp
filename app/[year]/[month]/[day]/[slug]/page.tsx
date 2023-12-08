@@ -1,4 +1,3 @@
-import { CodeBlock } from "@/app/_components/code-block"
 import { DateTime } from "@/app/_components/date-time"
 import { PostCard } from "@/app/_components/post-card"
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
@@ -10,7 +9,7 @@ import { getPosts } from "@/lib/markdown/get-posts"
 import { getRelatedPosts } from "@/lib/markdown/get-related-posts"
 import { Metadata } from "next"
 import Link from "next/link"
-import Markdown from "react-markdown"
+import markdownToHtml from "zenn-markdown-html"
 
 type Props = {
   params: {
@@ -37,6 +36,8 @@ const PostPage = async (props: Props) => {
     props.params.day,
     post.slug,
   )
+
+  const html = markdownToHtml(post.body)
 
   return (
     <main className="max-w-screen-md mx-auto px-4 space-y-8">
@@ -66,83 +67,10 @@ const PostPage = async (props: Props) => {
             ))}
           </section>
         )}
-        <Markdown
-          className={"leading-relaxed"}
-          components={{
-            h1(props) {
-              const { node, ...rest } = props
-              return (
-                <h2
-                  className="text-3xl font-bold mt-12 mb-4 leading-snug"
-                  {...rest}
-                />
-              )
-            },
-            h2(props) {
-              const { node, ...rest } = props
-              return (
-                <h3
-                  className="text-2xl font-bold mt-8 mb-4 leading-snug"
-                  {...rest}
-                />
-              )
-            },
-            p(props) {
-              const { node, ...rest } = props
-              return <p className="my-2" {...rest} />
-            },
-            a(props) {
-              const { node, ...rest } = props
-              return (
-                <a
-                  className="text-blue-500 underline"
-                  target="_blank"
-                  {...rest}
-                />
-              )
-            },
-            ul(props) {
-              const { node, ...rest } = props
-              return <ul className="my-2 list-disc list-inside" {...rest} />
-            },
-            ol(props) {
-              const { node, ...rest } = props
-              return <ol className="my-2" {...rest} />
-            },
-            blockquote(props) {
-              const { node, ...rest } = props
-              return <blockquote className="my-2" {...rest} />
-            },
-            pre(props) {
-              if (!props.node || props.node.type !== "element") {
-                return null
-              }
-              const [elementNode] = props.node.children
-              if (elementNode.type !== "element") {
-                return null
-              }
-              const [textNode] = elementNode.children
-              if (textNode.type !== "text") {
-                return null
-              }
-              const codeClassNames = elementNode.properties.className
-              if (
-                typeof codeClassNames !== "object" ||
-                codeClassNames === null
-              ) {
-                return null
-              }
-              const [codeClassName] = codeClassNames
-              if (typeof codeClassName !== "string") {
-                return null
-              }
-              const language = codeClassName.replace("language-", "")
-              return <CodeBlock language={language}>{textNode.value}</CodeBlock>
-            },
-          }}
-        >
-          {post.body}
-        </Markdown>
+        <div
+          className="znc font-medium"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </article>
       <Separator />
       <section className="space-y-4">
