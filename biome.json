@@ -12,6 +12,9 @@
       },
       "nursery": {
         "noUnusedImports": "error"
+      },
+      "security":{
+        "noDangerouslySetInnerHtml": "off"
       }
     }
   },

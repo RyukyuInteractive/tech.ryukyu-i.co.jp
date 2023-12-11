@@ -1,3 +1,4 @@
+import "zenn-content-css"
 import "./globals.css"
 
 import { RootFooter } from "@/app/_components/root-footer"
@@ -10,7 +11,6 @@ import { Noto_Sans_JP } from "next/font/google"
 import Script from "next/script"
 
 const notoSansJp = Noto_Sans_JP({
-  weight: ["500", "700"],
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -34,6 +34,7 @@ const RootLayout = (props: Props) => {
    function gtag(){dataLayer.push(arguments);}
    gtag('js', new Date());`}
         </Script>
+        <Script src="https://embed.zenn.studio/js/listen-embed-event.js" />
       </head>
       <body
         className={cn(
