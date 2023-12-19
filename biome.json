@@ -1,5 +1,4 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
   "organizeImports": {
     "enabled": true
   },
@@ -13,7 +12,7 @@
       "nursery": {
         "noUnusedImports": "error"
       },
-      "security":{
+      "security": {
         "noDangerouslySetInnerHtml": "off"
       }
     }
@@ -27,6 +26,6 @@
     }
   },
   "files": {
-    "ignore": [".next", "public", "package-lock.json"]
+    "ignore": [".next", "public", "package-lock.json", "out"]
   }
 }
