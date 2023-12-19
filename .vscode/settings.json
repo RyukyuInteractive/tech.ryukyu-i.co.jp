@@ -53,5 +53,11 @@
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
   }
 }
