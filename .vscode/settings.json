@@ -36,6 +36,7 @@
     "react-day-picker",
     "tailwind-merge"
   ],
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

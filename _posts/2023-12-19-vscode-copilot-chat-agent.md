@@ -16,9 +16,9 @@ VSCodeのCopilotには `@workspace` のようなAgentと呼ばれる機能があ
 
 https://laiso.hatenablog.com/entry/2023/12/02/150356
 
-ここでは練習として必ず日本語で応答してくれる `@japon` を作成しました。
+ここでは練習としてTypeScriptの関数を作成してくれる `@ts-function` を作成しました。
 
-![img](/images/2023/cf0899ec-706d-63c7-4188-f38c0915cb31.png)
+![img](/images/2023/2023-12-19-chat.png)
 
 サンプルのリポジトリはこちら。
 
@@ -64,6 +64,8 @@ https://github.com/microsoft/vscode-extension-samples/tree/main/chat-agent-sampl
 
 この中の `extension.ts` をこのように書き換えました。
 
+定義していただく関数の条件を箇条書きで渡しています。
+
 ```ts
 import * as vscode from "vscode"
 
@@ -79,11 +81,23 @@ export function activate(context: vscode.ExtensionContext) {
     const messages = [
       {
         role: vscode.ChatMessageRole.System,
-        content: "日本語で応答してください。",
+        content: `以下のルールに従ってTypeScriptで書かれた関数のコードと説明を応答してください。
+        - 最新の文法を使用する
+        - 可能な限り再代入を避ける
+        - 必要に応じてガード節を使用する
+        - Any型の使用はジェネリクスを用いて避ける
+        - Any型の値を返却しない
+        - undefinedの代わりにnullを使用する
+        - 変数名は省略しない
+        - 引数が複数ある場合はオブジェクトにする
+        - 引数がオブジェクトの場合は変数名をpropsに型名はPropsにする
+        - 分割代入引数を使用しない
+        関数の形式:
+        ${encloseWithTripleBackticks(sampleCode)}`,
       },
       {
         role: vscode.ChatMessageRole.User,
-        content: `${request.prompt}（端的に応答）`,
+        content: `${request.prompt}（日本語で応答）`,
       },
     ]
     const chatRequest = access.makeRequest(messages, {}, token)
@@ -93,10 +107,10 @@ export function activate(context: vscode.ExtensionContext) {
     return {}
   }
 
-  const agent = vscode.chat.createChatAgent("japon", handler)
+  const agent = vscode.chat.createChatAgent("ts-function", handler)
   agent.iconPath = vscode.Uri.joinPath(context.extensionUri, "icon.png")
   agent.description = vscode.l10n.t("今日は何をお手伝いしましょうか？")
-  agent.fullName = vscode.l10n.t("Japon")
+  agent.fullName = vscode.l10n.t("ts-function")
 }
 
 export function deactivate() {}
@@ -165,11 +179,13 @@ Microsoftのリポジトリのサンプルコードには無いですが手元�
 const messages = [
   {
     role: vscode.ChatMessageRole.System,
-    content: "日本語で応答してください。",
+    content: `以下のルールに従ってTypeScriptで書かれた関数のコードと説明を応答してください。
+    - 最新の文法を使用する
+    - 可能な限り再代入を避ける`,
   },
   {
     role: vscode.ChatMessageRole.User,
-    content: `${request.prompt}（端的に応答）`,
+    content: `${request.prompt}（日本語で応答）`,
   },
 ]
 ```
@@ -184,40 +200,53 @@ const messages = [
 
 https://platform.openai.com/docs/guides/text-generation/chat-completions-api
 
-ここでは日本語で応答するような設定にしているので、日本語で応答されやすくなります。
-例えば、常にTailwind CSSのクラス名を生成して応答するような指示も出来ます。
+ここではTypeScriptの関数を応答するような設定にしていますが、例えばTailwind CSSのクラス名を生成して応答するような指示も出来ます。
 
 ```ts
 {
   role: vscode.ChatMessageRole.System,
-  content: "日本語で応答してください。",
+  content: `以下のルールに従ってTypeScriptで書かれた関数のコードと説明を応答してください。
+  - 最新の文法を使用する
+  - 可能な限り再代入を避ける`,
 }
 ```
 
-ユーザの発言は `request.prompt` にありますが。好きなように編集できます。後に `（端的に応答）` のような指示を追加するとSystemより効きやすいです。
+ユーザの発言は `request.prompt` にありますが。好きなように編集できます。後に `（日本語で応答）` のような指示を追加するとSystemより効きやすいです。
 
 ```ts
 {
   role: vscode.ChatMessageRole.User,
-  content: `${request.prompt}（端的に応答）`,
+  content: `${request.prompt}（日本語で応答）`,
 }
 ```
 
-## 設定を変更する
-
-このように設定している場合はチャットで `@japon` と書いて呼び出します。好きな名前に変更してください。
+ここでベトナム語を指定すればベトナム語になります。このような指示はSystemに書くと無視されることがあります。
 
 ```ts
-const agent = vscode.chat.createChatAgent("japon", handler)
+{
+  role: vscode.ChatMessageRole.User,
+  content: `${request.prompt}（ベトナム語で応答）`,
+}
+```
+
+日本語で指示してもベトナム語が返ってきます。
+
+![img](/images/2023/2023-12-19-chat-vi.png)
+
+## 設定を変更する
+
+このように設定している場合はチャットで `@ts-function` と書いて呼び出します。好きな名前に変更してください。
+
+```ts
+const agent = vscode.chat.createChatAgent("ts-function", handler)
 agent.iconPath = vscode.Uri.joinPath(context.extensionUri, "icon.png")
-agent.description = vscode.l10n.t("今日は何をお手伝いしましょうか？")
-agent.fullName = vscode.l10n.t("Japon")
+agent.description = vscode.l10n.t("TypeScriptの関数を定義します")
+agent.fullName = vscode.l10n.t("ts-function")
 ```
 
 # 他のAPIと組み合わせる
 
-サンプルではVSCodeの `vscode.chat` というAPIを使用していますが他のAPIと組み合わせて使用します。
-このままではただのチャットになってしまいます。
+サンプルではVSCodeの `vscode.chat` というAPIを使用していますが他のAPIと組み合わせて使用します。このままではただのチャットですね。
 
 ```ts
 const access = await vscode.chat.requestChatAccess("copilot")
