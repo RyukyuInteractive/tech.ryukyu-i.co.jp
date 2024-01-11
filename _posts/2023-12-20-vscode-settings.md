@@ -1,10 +1,13 @@
 ---
 layout: post
 title: 'VSCodeのよく使う設定'
-date: 2023-12-20 00:00:00 +0900
+date: 2024-01-11 00:00:00 +0900
 comments: true
 author: reiwa
 typora-root-url: ..
+tags:
+  - vscode
+  - typescript
 ---
 
 このようにリポジトリに設定ファイルを設置することで、VSCodeの設定を共有できます。
