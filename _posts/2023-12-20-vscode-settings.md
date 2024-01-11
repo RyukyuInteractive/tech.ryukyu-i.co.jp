@@ -17,7 +17,7 @@ typora-root-url: ..
 
 # 言語ごとに設定を適用する
 
-括弧を用いて言語ごとにcodeActionsOnSaveなどを設定できます。ここではBiomeを設定しています。
+括弧を用いて言語ごとにcodeActionsOnSaveなどを設定できます。ここではBiomeをTypeScriptのみに設定しています。
 
 ```json
 {
@@ -33,6 +33,14 @@ typora-root-url: ..
 ```
 
 tsxファイルに設定を適用する場合はtypescriptreactを使用します。
+
+CSSではPrettierを使用するなど分けることが出来ます。
+
+```
+"[css]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+```
 
 # 不要なファイルを除外する
 
@@ -63,7 +71,9 @@ tsxファイルに設定を適用する場合はtypescriptreactを使用しま�
 }
 ```
 
-# autoImportFileExcludePatterns
+# TypeScript
+
+## preferences.autoImportFileExcludePatterns
 
 この設定を追加するとTypeScriptの自動インポートの対象から除外できます。
 
@@ -87,7 +97,7 @@ tsxファイルに設定を適用する場合はtypescriptreactを使用しま�
 
 ![img](/images/2023/8921fa1f-d007-745c-3a45-5a51ac905975.png)
 
-# importModuleSpecifier
+## preferences.importModuleSpecifier
 
 この設定を追加すると絶対パスでインポートされるようになります。
 
@@ -98,7 +108,6 @@ tsxファイルに設定を適用する場合はtypescriptreactを使用しま�
 ```
 
 その場合はtsconfigは例えばこのように設定されていると思います。
-ただこの設定だけでは自動インポートが相対パスを出力してしまうので、autoImportFileExcludePatternsも設定しています。
 
 ```json
 {
@@ -111,7 +120,18 @@ tsxファイルに設定を適用する場合はtypescriptreactを使用しま�
 }
 ```
 
+ただこのtsconfigの設定だけでは自動インポートが相対パスを出力してしまうので、autoImportFileExcludePatternsも設定しています。
 これはVSCodeのアップデートで解消されるかもです。
+
+## tsdk
+
+このように設定するとVSCodeがローカルのTypeScriptのバージョンを使用するようになります。
+
+```
+"typescript.tsdk": "node_modules/typescript/lib",
+```
+
+バージョンによって文法が異なるので、古いバージョンを使用している場合はローカルのバージョンを使用する方が安全です。
 
 # cSpell
 
@@ -119,7 +139,7 @@ tsxファイルに設定を適用する場合はtypescriptreactを使用しま�
 
 https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 
-ただ知らない単語があると警告が煩いのでライブラリや製品の固有名詞は除外すると幸せになります。
+ただ知らない単語があると警告が煩いので設定で無視することができます。
 
 ```json
 {
@@ -127,3 +147,44 @@ https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spel
   "cSpell.ignorePaths": [".vscode"]
 }
 ```
+
+あとvscodeの設定などファイルごと無視したい場合は `ignorePaths` を使用します。
+
+# files.associations
+
+この設定を追加するとsvgファイルでもHTMLとして認識されVSCodeのPrettierでフォーマットしたりできます。
+
+```
+"files.associations": {
+  "*.xml": "html",
+  "*.svg": "html",
+  "*.css": "tailwindcss"
+},
+```
+
+## Unknown at rule @tailwindcss
+
+特にNext.jsの `globals.css` などでTailwindCSSが設定されていると以下のようなエラーが発生します。
+
+```
+Unknown at rule @tailwindcss(unknownAtRules)
+```
+
+このような表示です。
+
+![img](/images/2024/2024-01-11.png)
+
+VSCodeの設定を追加するとエラーが消えます。
+
+```json
+{
+  "css.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html"
+  }
+}
+```
+
+# 最後に
+
+何か設定が増えたら追記しようと思います。
