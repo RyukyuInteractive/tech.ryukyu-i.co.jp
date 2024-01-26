@@ -30,7 +30,80 @@ Macのスクリーンショットを撮影した際に画面の隅に表示さ�
 
 ---
 
+
 ## SKK紹介[@atomita](https://github.com/atomita)
 
+- 海上クレーンメーカーではなく日本語入力のやつです
+- [SKK - Wikipedia](https://ja.wikipedia.org/wiki/SKK)
+- Emacs向けに作られたものですが、LinuxではOSのImput Methodとしても導入できます
+- 以前導入を試みたときは、fcitxを頻繁に再起動しなければならない状態に陥り、導入を断念していました
+- 入力は特徴的で、漢字やカタカナの入力の最初をShiftを使って入力始めると変換対象となります
+- この文はSKKで書きました
+- 慣れれば滑らかに入力できそうな気がします、慣れれば...
+
+
 ## PHP 8.1, 8.2 New Features[@atomita](https://github.com/atomita)
+
+- [PHP: PHP 8.1.0 Release Announcement](https://www.php.net/releases/8.1/ja.php)
+    - ENUM型
+        - 限定された文字列値のところに使っていくと、IDEの恩恵が高まりそうですね
+    - 読み取り専用プロパティ
+        - getterを定義しなくてよくなるの助かります
+    - 第一級callable
+        - 関数やMethodをClosure化するのが簡潔に書けていいです!
+    - 引数デフォルト値にNew
+        - 
+        - 
+        - 
+        - 
+    - 交差型
+        - 
+        - 
+        - 
+    - Never型
+        - 
+        - 
+        - 
+    - Finalクラス定数
+        - 
+        - 
+        - 
+    - 8進数表記
+        - 
+        - 
+        - 
+        - 
+    - Fiber
+        - 
+        - 
+        - 
+    - 文字列キー配列のアンパック
+        - 
+        - 
+        - 
+- [PHP: PHP 8.2.0 Release Announcement](https://www.php.net/releases/8.2/ja.php)
+    - 読み取り専用クラス
+        - 
+        - 
+        - 
+    - DNF(Disjunctive Normal Form)型
+        - 
+        - 
+        - 
+    - null, false, true が、独立した型に
+        - 
+        - 
+        - 
+    - "Random" 拡張モジュール
+        - 
+        - 
+        - 
+    - トレイトで定数
+        - 
+        - 
+        - 
+    - 動的なプロパティが非推奨に
+        - 
+        - 
+        - 
 
