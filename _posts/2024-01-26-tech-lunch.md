@@ -15,7 +15,12 @@ tags:
 ---
 
 ## 小ネタ[@naotty](https://github.com/naotty)
-
+新年一発目なのに何も準備できずorz  
+今さらながら、iPhone+SafariのURL入力にテキスト認識を使用した。    
+[iPhoneのカメラでテキスト認識表示を使用する \- Apple サポート \(日本\)](https://support.apple.com/ja-jp/guide/iphone/iphcf0b71b0e/ios)  
+検証環境のURLやID/パスワードの入力が手間だったけどこれで楽に。  
+1点、手ブレで読み取りがうまくいかなかったりするのがツラい(^^;  
+普段はPC側のBluetoothをoffってるからユニバーサルクリップボード使えなかったのか・・(後で知った  
 
 ---
 
