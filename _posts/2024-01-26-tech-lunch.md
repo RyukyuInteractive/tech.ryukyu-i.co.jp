@@ -19,7 +19,7 @@ tags:
 
 ---
 
-## 小ネタ[@ip-san](https://github.com/ip-san)
+## スマホからSlackに写真アップすると、PC側で一緒に文章編集して投稿できるよって話[@ip-san](https://github.com/ip-san)
 
 
 ---
