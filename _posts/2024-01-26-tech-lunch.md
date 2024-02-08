@@ -49,6 +49,7 @@ Macのスクリーンショットを撮影した際に画面の隅に表示さ�
 
 ## PHP 8.1, 8.2 New Features[@atomita](https://github.com/atomita)
 
+
 - [PHP: PHP 8.1.0 Release Announcement](https://www.php.net/releases/8.1/ja.php)
     - ENUM型
         - 限定された文字列値のところに使っていくと、IDEの恩恵が高まりそうですね
@@ -57,58 +58,29 @@ Macのスクリーンショットを撮影した際に画面の隅に表示さ�
     - 第一級callable
         - 関数やMethodをClosure化するのが簡潔に書けていいです!
     - 引数デフォルト値にNew
-        - 
-        - 
-        - 
-        - 
+        - アトリビュートを多用している場合に便利になりますね
     - 交差型
-        - 
-        - 
-        - 
+        - 交差型とUNION型の混在はできないけど、十分便利
     - Never型
-        - 
-        - 
-        - 
+        - redirectの場合もneverを返すと定義するんですね
     - Finalクラス定数
-        - 
-        - 
-        - 
+        - 上書きできないクラス定数、待ってました！
     - 8進数表記
-        - 
-        - 
-        - 
-        - 
+        - Webではあまり使われなさそう？
     - Fiber
-        - 
-        - 
-        - 
+        - WebSocket Frameworkが多様してそうですね
     - 文字列キー配列のアンパック
-        - 
-        - 
-        - 
+        - 連想配列もmergeも楽に！
 - [PHP: PHP 8.2.0 Release Announcement](https://www.php.net/releases/8.2/ja.php)
     - 読み取り専用クラス
-        - 
-        - 
-        - 
+        - DDDの値オブジェクトで活用されますね
     - DNF(Disjunctive Normal Form)型
-        - 
-        - 
-        - 
+        - 交差型とUNION型の混在が可能に！
     - null, false, true が、独立した型に
-        - 
-        - 
-        - 
+        - trueしか返さない関数とか結構ありますもんね
     - "Random" 拡張モジュール
-        - 
-        - 
-        - 
+        - 私が恩恵にあずかることは無いか、も...
     - トレイトで定数
-        - 
-        - 
-        - 
+        - Traitで定数定義できないの地味に不便だったんですよねー
     - 動的なプロパティが非推奨に
-        - 
-        - 
-        - 
-
+        - よりbugり難く！
