@@ -10,8 +10,12 @@ tags:
 ---
 
 ## 小ネタ[@MotoiOkuhira](https://github.com/MotoiOkuhira)
-
-
+Studioに埋め込んだTableauのフィルターをStudioに設置したチェックボックスやラジオボタンで操作する
+Tableauのデータを操作するにはフィルターで絞り込む方法とパラメータを変更する方法がある
+フィルターで絞り込む場合・・・applyFilterAsyncを使用
+パラメータを変更する場合・・・changeParameterValueAsyncを使用
+最初データを操作する方法が2種類あることを知らず実装に時間がかかってしまったので
+埋め込んだTableauのダッシュボードをサイト側から操作する機会があった時はぜひ参考にしてください
 ---
 
 ## 小ネタ[@naotty](https://github.com/naotty)
