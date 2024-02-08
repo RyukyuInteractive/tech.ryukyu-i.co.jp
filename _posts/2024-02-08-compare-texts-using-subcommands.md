@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'サブコマンドとファイルディスクリプタを活用したテキスト比較'
-date: 2024-02-09 00:00:00 +0900
+date: 2024-02-08 00:00:00 +0900
 comments: true
 author: reiwa
 typora-root-url: ..
