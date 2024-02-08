@@ -1,5 +1,5 @@
 import { format } from "date-fns"
-import ja from "date-fns/locale/ja"
+import { ja } from "date-fns/locale"
 
 type Props = {
   text: string
